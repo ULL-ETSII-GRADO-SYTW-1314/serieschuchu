@@ -1,0 +1,12 @@
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-08 08:36:36 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/drjackson/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/railties-4.0.1/lib/rails/templates/rails/welcome/index.html.erb (7.3ms)
+Completed 200 OK in 164ms (Views: 90.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-08 08:36:38 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/drjackson/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/railties-4.0.1/lib/rails/templates/rails/welcome/index.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
