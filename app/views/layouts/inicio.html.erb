@@ -21,11 +21,16 @@
 			</ul>
 		</div>
 		<div class="login-top">
-			<%=current_user.username%> 
-			<br/>
-			<label class="mini">
-				<%=link_to("Sign out", destroy_user_session_path, :method => :delete) %>
-			</label>
+			<div class="login-top-imagen">
+				<%= image_tag avatar_url(current_user) %>
+			</div>
+			<div class="login-top-texto">
+				<%=current_user.username%> 
+				<br/>
+				<label class="mini">
+					<%=link_to("Sign out", destroy_user_session_path, :method => :delete) %>
+				</label>
+			</div>
 		</div>
 		<div class="buscador-top">
 			<input type="text" placeholder="Buscar" name="buscar"/>
