@@ -24480,3 +24480,324 @@ Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-12 22:08:12 
 
 
 Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-12 22:08:12 +0000
+
+
+Started DELETE "/users/sign_out" for 192.168.1.33 at 2013-11-12 22:15:13 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"f6DVPMefrN+cK3W1kZB6Xltr+TxqcUonkXGRz2ptIiI="}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://192.168.1.34:3000/
+Completed 302 Found in 25ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 192.168.1.33 at 2013-11-12 22:15:13 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.33 at 2013-11-12 22:15:13 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-12 22:15:13 +0000
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-12 22:15:13 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-12 22:15:13 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 192.168.1.33 at 2013-11-12 22:15:13 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-12 22:15:13 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-12 22:15:14 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-12 22:15:14 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-12 22:15:14 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-12 22:15:14 +0000
+
+
+Started GET "/assets/neutra_text.ttf" for 192.168.1.33 at 2013-11-12 22:15:14 +0000
+
+
+Started GET "/assets/neutra_text_alt.ttf" for 192.168.1.33 at 2013-11-12 22:15:14 +0000
+
+
+Started GET "/users/sign_in" for 192.168.1.33 at 2013-11-12 22:15:18 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 27ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.33 at 2013-11-12 22:15:23 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 192.168.1.33 at 2013-11-12 22:15:24 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.33 at 2013-11-12 22:15:27 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (25.6ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 192.168.1.33 at 2013-11-12 22:15:28 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (72.7ms)
+Completed 200 OK in 177ms (Views: 173.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.33 at 2013-11-12 22:15:30 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 192.168.1.33 at 2013-11-12 22:15:35 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 118ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 192.168.1.33 at 2013-11-12 22:15:41 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m+AsL5tmCH1XCDqTLyt9uMrq/z6RPKJTMhwd1Fd7M/Y=", "user"=>{"email"=>"alu0100356137@ull.edu.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'alu0100356137@ull.edu.es' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 3[0m  [["last_sign_in_at", Tue, 12 Nov 2013 22:08:10 UTC +00:00], ["current_sign_in_at", Tue, 12 Nov 2013 22:15:41 UTC +00:00], ["sign_in_count", 5], ["updated_at", Tue, 12 Nov 2013 22:15:41 UTC +00:00]]
+  [1m[35m (28.7ms)[0m  commit transaction
+Redirected to http://192.168.1.34:3000/
+Completed 302 Found in 147ms (ActiveRecord: 30.0ms)
+
+
+Started GET "/" for 192.168.1.33 at 2013-11-12 22:15:41 +0000
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered welcome/index.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.33 at 2013-11-12 22:15:41 +0000
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-12 22:15:41 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-12 22:15:41 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-12 22:15:41 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 192.168.1.33 at 2013-11-12 22:15:41 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-12 22:15:41 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-12 22:15:41 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-12 22:15:41 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-12 22:15:41 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-12 22:15:41 +0000
+
+
+Started GET "/inicio/portada" for 192.168.1.33 at 2013-11-12 22:15:42 +0000
+Processing by InicioController#portada as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered inicio/portada.html.haml within layouts/inicio (0.2ms)
+Completed 200 OK in 41ms (Views: 36.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-12 22:15:42 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-12 22:15:42 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 192.168.1.33 at 2013-11-12 22:15:42 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-12 22:15:42 +0000
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-12 22:15:42 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.33 at 2013-11-12 22:15:42 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-12 22:15:42 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-12 22:15:42 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-12 22:15:42 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-12 22:15:42 +0000
+
+
+Started DELETE "/users/sign_out" for 192.168.1.33 at 2013-11-12 22:16:47 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pIXWsdp59iY3WsNR5SfAvOwKMZcyFzlhkjZX4Hw8vVk="}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://192.168.1.34:3000/
+Completed 302 Found in 25ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 192.168.1.33 at 2013-11-12 22:16:47 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.33 at 2013-11-12 22:16:47 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-12 22:16:47 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-12 22:16:47 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-12 22:16:47 +0000
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-12 22:16:47 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 192.168.1.33 at 2013-11-12 22:16:47 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-12 22:16:47 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-12 22:16:47 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-12 22:16:47 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-12 22:16:47 +0000
+
+
+Started GET "/users/sign_in" for 192.168.1.33 at 2013-11-12 22:16:50 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 101ms (Views: 98.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 192.168.1.33 at 2013-11-12 22:16:58 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zIZdtYGeTqm/dton7ZnTegFc9HON5+dxgkqEe3ky/Ng=", "user"=>{"email"=>"alu0100356137@ull.edu.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'alu0100356137@ull.edu.es' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 3  [["last_sign_in_at", Tue, 12 Nov 2013 22:15:41 UTC +00:00], ["current_sign_in_at", Tue, 12 Nov 2013 22:16:58 UTC +00:00], ["sign_in_count", 6], ["updated_at", Tue, 12 Nov 2013 22:16:58 UTC +00:00]]
+  [1m[36m (32.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://192.168.1.34:3000/
+Completed 302 Found in 153ms (ActiveRecord: 34.3ms)
+
+
+Started GET "/" for 192.168.1.33 at 2013-11-12 22:16:58 +0000
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered welcome/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.33 at 2013-11-12 22:16:58 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-12 22:16:58 +0000
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-12 22:16:58 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 192.168.1.33 at 2013-11-12 22:16:58 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-12 22:16:58 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-12 22:16:58 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-12 22:16:58 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-12 22:16:58 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-12 22:16:58 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-12 22:16:58 +0000
+
+
+Started GET "/inicio/portada" for 192.168.1.33 at 2013-11-12 22:16:59 +0000
+Processing by InicioController#portada as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered inicio/portada.html.haml within layouts/inicio (0.9ms)
+Completed 200 OK in 35ms (Views: 30.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.33 at 2013-11-12 22:16:59 +0000
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-12 22:16:59 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 192.168.1.33 at 2013-11-12 22:16:59 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-12 22:16:59 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-12 22:16:59 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-12 22:16:59 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-12 22:16:59 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-12 22:16:59 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-12 22:16:59 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-12 22:16:59 +0000
