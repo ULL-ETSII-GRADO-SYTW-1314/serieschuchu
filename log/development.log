@@ -19699,3 +19699,39 @@ Started GET "/" for 192.168.1.33 at 2013-11-12 17:41:22 +0000
 Processing by WelcomeController#index as HTML
   Rendered welcome/index.html.haml within layouts/application (1.9ms)
 Completed 200 OK in 128ms (Views: 126.1ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAdminToUsers (20131112180035)
+  [1m[35m (0.8ms)[0m  begin transaction
+  [1m[36m (30.6ms)[0m  [1mALTER TABLE "users" ADD "admin" boolean DEFAULT 'f'[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131112180035"]]
+  [1m[36m (44.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 192.168.1.33 at 2013-11-12 18:04:34 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (56.7ms)
+Completed 200 OK in 392ms (Views: 291.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-12 18:04:35 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-12 18:04:35 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-12 18:04:35 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-12 18:04:35 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-12 18:04:35 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddEstadoToUsers (20131112180701)
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mALTER TABLE "users" ADD "estado" integer DEFAULT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131112180701"]]
+  [1m[36m (32.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
