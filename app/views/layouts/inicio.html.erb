@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Serieschuchu</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="barra-top">
+	<div class="interior-series">
+		<div class="logo-top">
+			<a href="/inicio/portada">Serieschuchu</a>
+		</div>
+		<div class="menu-top">
+			<ul>
+			<li> Mis Series</li>
+			<li> Amigos </li>
+			<li> Catálogo</li>
+			</ul>
+		</div>
+		<div class="login-top">
+			<%=current_user.username%> 
+			<br/>
+			<label class="mini">
+				<%=link_to("Sign out", destroy_user_session_path, :method => :delete) %>
+			</label>
+		</div>
+		<div class="buscador-top">
+			<input type="text" placeholder="Buscar" name="buscar"/>
+		</div>
+	</div>
+</div>
+
+<div class="interior-series">
+
+	<%= yield %>
+
+</div>
+
+</body>
+</html>
