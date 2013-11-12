@@ -1,0 +1,152 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+//arreglar la ruta de la fuente
+@font-face {
+	font-family: neutratext;
+	src: url('neutra_text.ttf');
+}
+@font-face {
+	font-family: neutratextalt;
+	src: url('neutra_text_alt.ttf');
+}
+
+$azul_celeste: #139ABD;
+$verde_oscuro: #242424;
+$amarillo_suave: #FEF288;
+$verde_moco: #83f3c6;
+$gris_claro: #DBDBDB;
+
+#page-wrap-intro {
+ 	background-color: $azul_celeste;
+ 	color:white;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;        
+    width: 100%;
+    z-index: 1001;
+}
+
+#intro{
+	width:600px;
+	height:auto;
+	text-align:center;
+	margin:auto;
+	font-family:neutratext,sans-serif;
+	margin-top:60px;
+}
+#intro a {
+	text-decoration: none;
+	color:white;
+}
+#intro h1 {
+	font-size:30px;
+}
+#intro h3 {
+	font-family:neutratextalt,sans-serif;
+	font-size:18px;
+	font-weight: normal;
+}
+.intro-botones {
+	width:320px;
+	margin:auto;
+		margin-top:70px;
+}
+.intro-botones {
+	height:auto;
+	overflow:hidden;
+}
+.boton-intro {
+	@include border-radius(5px);
+	float:left;
+	width:130px;
+	height:60px;
+	border:1px solid white;
+	margin-right:15px;
+	&:hover {
+		background-color:white;
+		color:black;
+		transition:all 2s;
+	}
+}
+.etiqueta {
+	padding-top:23px;
+	font-size:14px;
+}
+//DEVISE login y registratioin
+#devise {
+	background-color: $verde_oscuro;
+ 	color:white;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;        
+    width: 100%;
+    z-index: 1001;
+}
+.barra-superior-devise {
+	height:70px;
+	background-color:white;
+	color:black;
+	border-top:4px solid $amarillo_suave;
+	h1 {
+		margin-left:40px;
+		margin-top:15px;
+	}
+	a {
+		color:black;
+		text-decoration: none;
+		font-family: neutratext;
+	}
+}
+.contenido-devise {
+	margin-left:40px;
+	font-family:neutrotextalt,sans-serif;
+	a {
+		color:$verde_moco;
+	}
+}
+.devise-input {
+
+	input {
+		width:675px;
+		height:50px;
+		color: white;
+		background-color:#2A2A2A;
+		border:none;
+		padding-left:20px;
+	}
+	input:hover {
+		background-color:#474747;
+		transition: all 1s;
+	}
+
+	margin-bottom:15px;
+}
+
+.devise-submit input {
+	width:95px;
+	height:50px;
+	background-color:$gris_claro;
+	border:none;
+	@include border-radius(5px);
+	&:hover {
+		background-color: $verde_moco;
+	}
+}
+.devise-boton-login {
+	@extend .devise-submit;
+
+	margin-left:600px;
+}

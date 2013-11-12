@@ -1,0 +1,30 @@
+<div id="devise">
+	<div class="barra-superior-devise">
+	<a href="/">
+		<h1>SERIESCHUCHU</h1>
+	</a>
+	</div>
+	<div class="contenido-devise">
+		<h1>REGISTRO</h1>
+
+		<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+		  <%= devise_error_messages! %>
+
+		  <div class="devise-input">
+		  <%= f.text_field :username, :placeholder=>"Nickname", :autofocus => true %></div>
+
+		  <div class="devise-input">
+		  <%= f.email_field :email, :placeholder=>"Email" %></div>
+
+		  <div class="devise-input">
+		  <%= f.password_field :password,:placeholder=>"Password" %></div>
+
+		  <div class="devise-input">
+		  <%= f.password_field :password_confirmation,:placeholder=>"Password confirmation" %></div>
+
+		  <div class="devise-boton-login"><%= f.submit "Registrar" %></div>
+		<% end %>
+
+		<%= render "devise/shared/links" %>
+	</div>
+</div>

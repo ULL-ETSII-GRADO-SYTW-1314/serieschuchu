@@ -1,0 +1,21 @@
+- if user_signed_in?
+	hola
+	Signed in as #{current_user.email} Not you?
+	= link_to("Sign out", destroy_user_session_path, :method => :delete)
+- else
+	#page-wrap-intro
+		#intro
+			.intro-imagen
+				%img{:src=>"img/logo1.png"}
+			.intro-bloque
+				%h1 SERIESCHUCHU LA NUEVA PLATAFORMA SOCIAL QUE TE MANTIENE AL DIA CON TUS SERIES
+				%h3 DESCUBRE, CREA, COMPARTE ENLACES DE TUS SERIES
+			.intro-botones
+				%a{:href=>new_user_registration_path}
+					.boton-intro
+						.etiqueta
+							REGISTRAR
+				%a{:href=>new_user_session_path}
+					.boton-intro
+						.etiqueta
+							LOGIN

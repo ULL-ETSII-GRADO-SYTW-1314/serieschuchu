@@ -19592,3 +19592,47 @@ Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-12 10:47:34 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-12 10:47:34 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-12 10:54:20 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (40.2ms)
+Completed 200 OK in 287ms (Views: 149.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-12 10:54:20 +0000
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-11-12 10:54:20 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-12 10:54:20 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-12 10:54:20 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-12 10:54:21 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-12 10:54:21 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-12 10:54:21 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-12 10:54:21 +0000
+
+
+Started GET "/assets/neutra_text_alt.ttf" for 127.0.0.1 at 2013-11-12 10:54:21 +0000
+
+
+Started GET "/assets/neutra_text.ttf" for 127.0.0.1 at 2013-11-12 10:54:21 +0000
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-11-12 10:54:23 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (142.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (201.8ms)
+Completed 200 OK in 281ms (Views: 219.1ms | ActiveRecord: 1.6ms)
