@@ -15,3 +15,4 @@ Changelog
 	* Vistas básicas de Series
 	* Cambio logo
 	* Cambio en el menu de navegacion
+	* merge rama master-series
