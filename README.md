@@ -8,4 +8,10 @@ Changelog
 	* creacion rama inicio, vista principal
 	* agregando helper para gravatar
 	* union inicio-master
-	
+* 13/12/2013:
+	* Corregido bug hojas de estilos
+	* Creando la rama series
+	* Modelo Series
+	* Vistas básicas de Series
+	* Cambio logo
+	* Cambio en el menu de navegacion

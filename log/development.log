@@ -33985,3 +33985,47 @@ Completed 200 OK in 33ms (Views: 27.9ms | ActiveRecord: 1.7ms)
 
 
 Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-13 03:06:44 +0000
+
+
+Started GET "/series" for 192.168.1.33 at 2013-11-13 03:08:28 +0000
+Processing by SeriesController#index as HTML
+  [1m[35mSeries Load (0.6ms)[0m  SELECT "series".* FROM "series"
+  Rendered series/index.html.haml within layouts/inicio (8.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 42ms (Views: 36.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-13 03:08:28 +0000
+
+
+Started GET "/inicio/portada" for 192.168.1.33 at 2013-11-13 03:08:29 +0000
+Processing by InicioController#portada as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered inicio/portada.html.haml within layouts/inicio (0.2ms)
+Completed 200 OK in 27ms (Views: 23.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-13 03:08:30 +0000
+
+
+Started GET "/series" for 192.168.1.33 at 2013-11-13 03:08:33 +0000
+Processing by SeriesController#index as HTML
+  [1m[36mSeries Load (0.5ms)[0m  [1mSELECT "series".* FROM "series"[0m
+  Rendered series/index.html.haml within layouts/inicio (4.2ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-13 03:08:33 +0000
+
+
+Started GET "/series/1" for 192.168.1.33 at 2013-11-13 03:08:35 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (1.6ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 28ms (Views: 24.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-13 03:08:35 +0000
