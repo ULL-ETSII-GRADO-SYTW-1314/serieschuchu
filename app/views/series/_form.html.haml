@@ -1,0 +1,37 @@
+= form_for @series do |f|
+  - if @series.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@series.errors.count, "error")} prohibited this series from being saved:"
+      %ul
+        - @series.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :nombre
+    = f.text_field :nombre
+  .field
+    = f.label :informacion
+    = f.text_area :informacion
+  .field
+    = f.label :sinopsis
+    = f.text_area :sinopsis
+  .field
+    = f.label :puntuacion
+    = f.text_field :puntuacion
+  .field
+    = f.label :votos
+    = f.number_field :votos
+  .field
+    = f.label :imagen
+    = f.check_box :imagen
+  .field
+    = f.label :enlace_imagen
+    = f.text_area :enlace_imagen
+  .field
+    = f.label :directores
+    = f.text_area :directores
+  .field
+    = f.label :titulo_original
+    = f.text_field :titulo_original
+  .actions
+    = f.submit 'Save'

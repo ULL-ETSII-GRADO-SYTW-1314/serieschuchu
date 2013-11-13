@@ -11,7 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131112180701) do
+ActiveRecord::Schema.define(version: 20131113002341) do
+
+  create_table "series", force: true do |t|
+    t.string   "nombre"
+    t.text     "informacion"
+    t.text     "sinopsis"
+    t.decimal  "puntuacion"
+    t.integer  "votos"
+    t.boolean  "imagen"
+    t.text     "enlace_imagen"
+    t.text     "directores"
+    t.string   "titulo_original"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "",    null: false

@@ -85,20 +85,29 @@ body {
 		border:none;
 		padding-left:10px;
 		color: black;
+		@include border-radius(5px);
 	}
 	::-webkit-input-placeholder {
 		color:#4F8DB5;
+		font-size:13px;
+		font-weight:bold;
 	}
 	:-moz-placeholder {
 		color:#4F8DB5;
+		font-size:13px;
+		font-weight:bold;
 	}
 	::-moz-placeholder {
 		color:#4F8DB5;
+		font-size:13px;
+		font-weight:bold;
 	}
 	:-ms-input-placeholder {
 		color:#4F8DB5;
+		font-size:13px;
+		font-weight:bold;
 	}
-	@include border-radius(5px);
+	
 	input:hover {
 		background-color: #D4E6F1;
 	}
@@ -109,4 +118,100 @@ body {
 	a {
 	color:white;
 	}
+}
+.titular {
+	font-weight: 100;
+	font-size: 35px;
+	color: black;
+	font-family: 'Open Sans',Helvetica, sans-serif, Arial;
+	margin-top:30px;
+	margin-bottom:20px;
+}
+.tipo-serie-catalogo {
+	float:left;
+	margin-right:20px;
+	width: 124px;
+	img {
+		width: 124px;
+		height: 184px;
+		background-color: #eaeaea;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		transition: all 0.1s linear;
+	}
+	label {
+		width: 124px;
+		height: 50px;
+		color: #353535;
+		font-size: 14px;
+	}
+}
+.show {
+	overflow:hidden;
+	margin-top:35px;
+	height:auto;
+}
+.show-col-1 {
+	float:left;
+	width:175px;
+	margin-right:40px;
+}
+.show-col-2 {
+	float:left;
+	width:610px;
+	margin-right:30px;
+}
+.show-col-3 {
+	float:left;
+	width:315px;
+}
+.show-titulo {
+	font-weight: 100;
+	font-size: 35px;
+	color: black;
+}
+.media {
+	font-weight: 100 !important;
+	font-size: 19px !important;
+	color: #4E4E4E !important;
+	underline {
+		border-bottom: 1px solid #ECECEC;
+		margin-top: 20px;
+		padding: 0 0 5px 2px;
+	}
+	a {
+		color: #a8a8a8;
+		font-family: Helvetica, sans-serif, Arial;
+		font-size: 15px;
+		font-weight: normal;
+	}
+}
+.show-menu {
+	margin-top:26px;
+}
+.show-info {
+	margin-top:26px;
+}
+.mini {
+	font-family: 'Open Sans',Helvetica, sans-serif, Arial;
+	color: #242424;
+	font-weight: 400;
+	font-size: 12px;
+}
+.show-info-tabla {
+	margin-top:15px;
+	@extend .mini;
+	table {
+		tr {
+
+			td {
+				min-width:165px;
+			}
+		}
+	}
+}
+.show-sinopsis {
+	margin-top:30px;
+	@extend .mini;
 }

@@ -1,4 +1,6 @@
 Serieschuchu::Application.routes.draw do
+  resources :series
+
   get "inicio/portada"
   get "inicio/index"
   get "welcome/index"

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  informacion: MyText
+  sinopsis: MyText
+  puntuacion: 9.99
+  votos: 1
+  imagen: false
+  enlace_imagen: MyText
+  directores: MyText
+  titulo_original: MyString
+
+two:
+  nombre: MyString
+  informacion: MyText
+  sinopsis: MyText
+  puntuacion: 9.99
+  votos: 1
+  imagen: false
+  enlace_imagen: MyText
+  directores: MyText
+  titulo_original: MyString

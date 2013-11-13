@@ -1,0 +1,15 @@
+.titular Catálogo
+
+- @series.each do |series|
+  %a{:href=>"series/#{series.id}"}
+    .tipo-serie-catalogo
+      %img{:src=>series.enlace_imagen}
+      %label #{series.nombre}
+  //%td= link_to 'Show', series
+  //%td= link_to 'Edit', edit_series_path(series)
+  //%td= link_to 'Destroy', series, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+
+= link_to 'New Series', new_series_path
