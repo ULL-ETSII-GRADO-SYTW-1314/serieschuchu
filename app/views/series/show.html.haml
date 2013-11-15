@@ -9,7 +9,7 @@
       %li{:class=>"active"}
         %a{:href=>"#informacion","data-toggle"=>"tab"} Información
       %li
-        %a{:href=>"#episodeos","data-toggle"=>"tab"} Episodeos
+        %a{:href=>"#episodios","data-toggle"=>"tab"} Episodios
     #myTabContent{:class=>"tab-content"}
       #informacion{:class=>"tab-pane fade in active"}
         .show-info
@@ -32,27 +32,37 @@
             .media Sinopsis
             %p
               =@series.sinopsis
-      #episodeos{:class=>"tab-pane fade"}
+      #episodios{:class=>"tab-pane fade"}
         .show-info
-          .media Episodeos
+          .media Episodios
           .show-info-tabla
             %table
-              %tr
-                %td Información
-                %td=@series.informacion
-              %tr
-                %td Puntuación
-                %td=@series.puntuacion.round(2)
-              %tr
-                %td Directores
-                %td=@series.directores
-              %tr
-                %td Título Original
-                %td=@series.titulo_original
+              - @series.episodes.each do |episode|
+                %tr
+                  %td
+                    = episode.numero_temporada
+                  %td
+                    = episode.numero_episodio
+                  %td
+                    = episode.nombre
           .show-sinopsis
-            .media Sinopsis
+            .media Agregar Episodio
             %p
-              =@series.sinopsis
+              = form_for ([@series, @series.episodes.build]) do |f|
+                #campo1.field
+                  = f.label :nombre
+                  %br
+                  = f.text_field :nombre
+                #campo2.field
+                  = f.label :numero_temporada
+                  %br
+                  = f.text_field :numero_temporada
+                #campo3.field
+                  = f.label :numero_episodio
+                  %br
+                  = f.text_field :numero_episodio
+                #enviar.actions
+                  = f.submit
 
     %script{:type=>"text/javascript"}
       $(document).ready(function() {
@@ -60,7 +70,7 @@
       e.preventDefault()
       $(this).tab('show')
       });
-      $('#episodeos a').click(function (e) {
+      $('#episodios a').click(function (e) {
       e.preventDefault()
       $(this).tab('show')
       });
