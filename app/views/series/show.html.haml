@@ -32,18 +32,18 @@
             .media Sinopsis
             %p
               =@series.sinopsis
-      #episodios{:class=>"tab-pane fade"}
+      #episodios{:class=>"tab-pane fade "}
         .show-info
-          .media Episodios
+          .media Lista de episodios
           .show-info-tabla
-            %table
+            %table.tabla-episodios
               - @series.episodes.each do |episode|
                 %tr
-                  %td
+                  %td.numeros_series
                     = episode.numero_temporada
-                  %td
-                    = episode.numero_episodio
-                  %td
+                    x
+                    = '%02d' % episode.numero_episodio
+                  %td.nombre_series
                     = episode.nombre
           .show-sinopsis
             .media Agregar Episodio

@@ -37284,3 +37284,1138 @@ Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-15 22:52
 
 
 Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-15 22:52:08 +0000
+
+
+Started GET "/series/3" for 192.168.1.33 at 2013-11-15 23:09:37 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSeries Load (0.5ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 3]]
+  Rendered series/show.html.haml within layouts/inicio (34.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 64ms (Views: 56.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-15 23:09:38 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-15 23:09:38 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 192.168.1.33 at 2013-11-15 23:09:38 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-15 23:09:38 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-15 23:09:38 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-15 23:09:38 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.1.33 at 2013-11-15 23:09:38 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.33 at 2013-11-15 23:09:38 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-15 23:09:38 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-15 23:09:38 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 192.168.1.33 at 2013-11-15 23:09:38 +0000
+
+
+Started GET "/assets/series.js?body=1" for 192.168.1.33 at 2013-11-15 23:09:38 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 192.168.1.33 at 2013-11-15 23:09:38 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-15 23:09:38 +0000
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-15 23:09:38 +0000
+
+
+Started GET "/series/3" for 192.168.1.33 at 2013-11-15 23:09:53 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mSeries Load (0.3ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 3]]
+  Rendered series/show.html.haml within layouts/inicio (37.8ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 64ms (Views: 59.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-15 23:09:54 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 192.168.1.33 at 2013-11-15 23:09:54 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-15 23:09:54 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-15 23:09:54 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-15 23:09:54 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.1.33 at 2013-11-15 23:09:54 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-15 23:09:54 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.33 at 2013-11-15 23:09:54 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-15 23:09:54 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 192.168.1.33 at 2013-11-15 23:09:54 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 192.168.1.33 at 2013-11-15 23:09:54 +0000
+
+
+Started GET "/assets/series.js?body=1" for 192.168.1.33 at 2013-11-15 23:09:54 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-15 23:09:54 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-15 23:09:54 +0000
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-15 23:09:54 +0000
+
+
+Started GET "/series/3" for 192.168.1.33 at 2013-11-15 23:10:05 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSeries Load (0.5ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 3]]
+  Rendered series/show.html.haml within layouts/inicio (45.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 138ms (Views: 130.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-15 23:10:05 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 192.168.1.33 at 2013-11-15 23:10:05 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-15 23:10:05 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-15 23:10:05 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-15 23:10:05 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.1.33 at 2013-11-15 23:10:05 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.33 at 2013-11-15 23:10:05 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 192.168.1.33 at 2013-11-15 23:10:05 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-15 23:10:05 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 192.168.1.33 at 2013-11-15 23:10:06 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-15 23:10:06 +0000
+
+
+Started GET "/assets/series.js?body=1" for 192.168.1.33 at 2013-11-15 23:10:06 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-15 23:10:06 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-15 23:10:06 +0000
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-15 23:10:06 +0000
+
+
+Started GET "/series/3" for 192.168.1.33 at 2013-11-15 23:11:24 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mSeries Load (0.5ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 3]]
+  Rendered series/show.html.haml within layouts/inicio (37.9ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 63ms (Views: 57.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-15 23:11:25 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 192.168.1.33 at 2013-11-15 23:11:25 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-15 23:11:25 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-15 23:11:25 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-15 23:11:25 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-15 23:11:25 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.1.33 at 2013-11-15 23:11:25 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.33 at 2013-11-15 23:11:25 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 192.168.1.33 at 2013-11-15 23:11:25 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-15 23:11:25 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 192.168.1.33 at 2013-11-15 23:11:25 +0000
+
+
+Started GET "/assets/series.js?body=1" for 192.168.1.33 at 2013-11-15 23:11:25 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-15 23:11:25 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-15 23:11:25 +0000
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-15 23:11:25 +0000
+
+
+Started GET "/series/3" for 192.168.1.33 at 2013-11-15 23:11:28 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSeries Load (0.3ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 3]]
+  Rendered series/show.html.haml within layouts/inicio (14.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 37ms (Views: 30.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-15 23:11:28 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 192.168.1.33 at 2013-11-15 23:11:28 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-15 23:11:28 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-15 23:11:28 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-15 23:11:28 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-15 23:11:28 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.1.33 at 2013-11-15 23:11:28 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.33 at 2013-11-15 23:11:28 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 192.168.1.33 at 2013-11-15 23:11:28 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-15 23:11:28 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 192.168.1.33 at 2013-11-15 23:11:28 +0000
+
+
+Started GET "/assets/series.js?body=1" for 192.168.1.33 at 2013-11-15 23:11:28 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-15 23:11:28 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-15 23:11:28 +0000
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-15 23:11:28 +0000
+
+
+Started GET "/series/3" for 192.168.1.33 at 2013-11-15 23:12:06 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mSeries Load (0.5ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 3]]
+  Rendered series/show.html.haml within layouts/inicio (36.4ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 64ms (Views: 55.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 192.168.1.33 at 2013-11-15 23:12:06 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:06 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-15 23:12:06 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:06 +0000
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-15 23:12:06 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:06 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:06 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:06 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:06 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:06 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:06 +0000
+
+
+Started GET "/assets/series.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:06 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:06 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:06 +0000
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-15 23:12:06 +0000
+
+
+Started GET "/series/3" for 192.168.1.33 at 2013-11-15 23:12:32 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSeries Load (1.0ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 3]]
+  Rendered series/show.html.haml within layouts/inicio (35.4ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 60ms (Views: 54.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-15 23:12:32 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 192.168.1.33 at 2013-11-15 23:12:32 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:32 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:32 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:32 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:32 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:32 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-15 23:12:32 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:32 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:32 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:32 +0000
+
+
+Started GET "/assets/series.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:32 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:32 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:33 +0000
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-15 23:12:33 +0000
+
+
+Started GET "/series/3" for 192.168.1.33 at 2013-11-15 23:12:45 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mSeries Load (0.1ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mEpisode Load (0.1ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 3]]
+  Rendered series/show.html.haml within layouts/inicio (34.1ms)
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 126ms (Views: 118.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-15 23:12:46 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:46 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:46 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-15 23:12:46 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 192.168.1.33 at 2013-11-15 23:12:46 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:46 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:46 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:46 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:46 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:46 +0000
+
+
+Started GET "/assets/series.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:46 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:46 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:46 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-15 23:12:46 +0000
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-15 23:12:46 +0000
+
+
+Started GET "/series/3" for 192.168.1.33 at 2013-11-15 23:14:33 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSeries Load (0.5ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 3]]
+  Rendered series/show.html.haml within layouts/inicio (29.1ms)
+Completed 500 Internal Server Error in 38ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    40:               - @series.episodes.each do |episode|
+    41:                 %tr
+    42:                   %td
+    43:                     = episode.numero_temporada " x "
+    44:                   %td
+    45:                     = episode.numero_episodio
+    46:                   %td
+  app/views/series/show.html.haml:43:in `block in _app_views_series_show_html_haml___557137220__618535728'
+  app/views/series/show.html.haml:40:in `_app_views_series_show_html_haml___557137220__618535728'
+
+
+  Rendered /home/reborn/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+  Rendered /home/reborn/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+  Rendered /home/reborn/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (28.4ms)
+
+
+Started GET "/series/3" for 192.168.1.33 at 2013-11-15 23:14:37 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSeries Load (1.0ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 3]]
+  Rendered series/show.html.haml within layouts/inicio (28.4ms)
+Completed 500 Internal Server Error in 39ms
+
+ActionView::Template::Error (String can't be coerced into Fixnum):
+    40:               - @series.episodes.each do |episode|
+    41:                 %tr
+    42:                   %td
+    43:                     = episode.numero_temporada + " x "
+    44:                   %td
+    45:                     = episode.numero_episodio
+    46:                   %td
+  app/views/series/show.html.haml:43:in `+'
+  app/views/series/show.html.haml:43:in `block in _app_views_series_show_html_haml___557137220_97182810'
+  app/views/series/show.html.haml:40:in `_app_views_series_show_html_haml___557137220_97182810'
+
+
+  Rendered /home/reborn/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.4ms)
+  Rendered /home/reborn/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.7ms)
+  Rendered /home/reborn/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (43.9ms)
+
+
+Started GET "/series/3" for 192.168.1.33 at 2013-11-15 23:14:45 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSeries Load (3.1ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 3]]
+  Rendered series/show.html.haml within layouts/inicio (36.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 66ms (Views: 56.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:45 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-15 23:14:45 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:45 +0000
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-15 23:14:45 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 192.168.1.33 at 2013-11-15 23:14:45 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:45 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:45 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:45 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:45 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:46 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:46 +0000
+
+
+Started GET "/assets/series.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:46 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:46 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:46 +0000
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-15 23:14:46 +0000
+
+
+Started GET "/series/3" for 192.168.1.33 at 2013-11-15 23:14:54 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mSeries Load (0.5ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 3]]
+  Rendered series/show.html.haml within layouts/inicio (32.4ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 60ms (Views: 51.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-15 23:14:54 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 192.168.1.33 at 2013-11-15 23:14:54 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:54 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:54 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:54 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-15 23:14:54 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:54 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:54 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:54 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:54 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:54 +0000
+
+
+Started GET "/assets/series.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:54 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:54 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:54 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:54 +0000
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-15 23:14:54 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:54 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.1.33 at 2013-11-15 23:14:54 +0000
+
+
+Started GET "/series/3" for 192.168.1.33 at 2013-11-15 23:15:10 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSeries Load (3.1ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 3]]
+  Rendered series/show.html.haml within layouts/inicio (36.1ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 65ms (Views: 57.0ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-15 23:15:10 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-15 23:15:10 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 192.168.1.33 at 2013-11-15 23:15:10 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:10 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:10 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:10 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:10 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:10 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:10 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:10 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:10 +0000
+
+
+Started GET "/assets/series.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:10 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:10 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:10 +0000
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-15 23:15:10 +0000
+
+
+Started GET "/series/3" for 192.168.1.33 at 2013-11-15 23:15:16 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mSeries Load (3.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mEpisode Load (0.6ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 3]]
+  Rendered series/show.html.haml within layouts/inicio (103.5ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 133ms (Views: 124.5ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-15 23:15:16 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 192.168.1.33 at 2013-11-15 23:15:16 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:16 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-15 23:15:16 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:16 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:16 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:16 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:16 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:16 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:16 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:16 +0000
+
+
+Started GET "/assets/series.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:16 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:16 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:17 +0000
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-15 23:15:17 +0000
+
+
+Started GET "/series/3" for 192.168.1.33 at 2013-11-15 23:15:26 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 3]]
+  Rendered series/show.html.haml within layouts/inicio (35.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 70ms (Views: 65.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 192.168.1.33 at 2013-11-15 23:15:26 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:26 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-15 23:15:26 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:26 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:26 +0000
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-15 23:15:26 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:26 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:26 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:26 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:26 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:26 +0000
+
+
+Started GET "/assets/series.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:26 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:26 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-15 23:15:26 +0000
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-15 23:15:26 +0000
+
+
+Started GET "/series/3" for 192.168.1.33 at 2013-11-15 23:18:06 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mSeries Load (3.5ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 3]]
+  Rendered series/show.html.haml within layouts/inicio (32.1ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 59ms (Views: 50.9ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 192.168.1.33 at 2013-11-15 23:18:07 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-15 23:18:07 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-15 23:18:07 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-15 23:18:07 +0000
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-15 23:18:07 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-15 23:18:07 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.1.33 at 2013-11-15 23:18:07 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.33 at 2013-11-15 23:18:07 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 192.168.1.33 at 2013-11-15 23:18:07 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-15 23:18:07 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 192.168.1.33 at 2013-11-15 23:18:07 +0000
+
+
+Started GET "/assets/series.js?body=1" for 192.168.1.33 at 2013-11-15 23:18:07 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-15 23:18:07 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-15 23:18:07 +0000
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-15 23:18:07 +0000
+
+
+Started DELETE "/users/sign_out" for 192.168.1.33 at 2013-11-15 23:20:05 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aKFUEqh30F78ShWzOjmZz1Wz44vBWe9NHTga55kyUhc="}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://192.168.1.35:3000/
+Completed 302 Found in 25ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 192.168.1.33 at 2013-11-15 23:20:05 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (29.0ms)
+Completed 200 OK in 61ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 192.168.1.33 at 2013-11-15 23:20:05 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:05 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:05 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:05 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:05 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:05 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:05 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:05 +0000
+
+
+Started GET "/assets/series.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:05 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:05 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:05 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:05 +0000
+
+
+Started GET "/assets/neutra_text.ttf" for 192.168.1.33 at 2013-11-15 23:20:05 +0000
+
+
+Started GET "/assets/neutra_text_alt.ttf" for 192.168.1.33 at 2013-11-15 23:20:05 +0000
+
+
+Started GET "/users/sign_in" for 192.168.1.33 at 2013-11-15 23:20:07 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (3.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 56ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 192.168.1.33 at 2013-11-15 23:20:12 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kGhoYGL/uphkL6jKKzg/ErYQYtIIwfD9HpjKgGxxMZI=", "user"=>{"email"=>"alu0100356137@ull.edu.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'alu0100356137@ull.edu.es' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 3  [["last_sign_in_at", Fri, 15 Nov 2013 21:40:04 UTC +00:00], ["current_sign_in_at", Fri, 15 Nov 2013 23:20:12 UTC +00:00], ["sign_in_count", 14], ["updated_at", Fri, 15 Nov 2013 23:20:12 UTC +00:00]]
+  [1m[36m (45.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://192.168.1.35:3000/
+Completed 302 Found in 175ms (ActiveRecord: 47.9ms)
+
+
+Started GET "/" for 192.168.1.33 at 2013-11-15 23:20:12 +0000
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered welcome/index.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 79ms (Views: 77.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 192.168.1.33 at 2013-11-15 23:20:12 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:12 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:12 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:12 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:12 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:12 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:12 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:12 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:12 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:12 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:12 +0000
+
+
+Started GET "/assets/series.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:12 +0000
+
+
+Started GET "/inicio/portada" for 192.168.1.33 at 2013-11-15 23:20:13 +0000
+Processing by InicioController#portada as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered inicio/portada.html.haml within layouts/inicio (2.8ms)
+Completed 200 OK in 37ms (Views: 32.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-15 23:20:13 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 192.168.1.33 at 2013-11-15 23:20:13 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-15 23:20:13 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:13 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:13 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:13 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:13 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:13 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:13 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:13 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:13 +0000
+
+
+Started GET "/assets/series.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:13 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:13 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-15 23:20:13 +0000
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-15 23:20:13 +0000
+
+
+Started GET "/series" for 192.168.1.33 at 2013-11-15 23:20:15 +0000
+Processing by SeriesController#index as HTML
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series"
+  Rendered series/index.html.haml within layouts/inicio (4.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 33ms (Views: 30.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-15 23:20:15 +0000
+
+
+Started GET "/series/3" for 192.168.1.33 at 2013-11-15 23:20:15 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mSeries Load (0.2ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 3]]
+  Rendered series/show.html.haml within layouts/inicio (30.5ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 53ms (Views: 48.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-15 23:20:16 +0000
+
+
+Started GET "/series/3" for 192.168.1.33 at 2013-11-15 23:34:54 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSeries Load (4.9ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 3]]
+  Rendered series/show.html.haml within layouts/inicio (36.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 240ms (Views: 161.5ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-15 23:34:54 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-15 23:34:54 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-15 23:34:54 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-15 23:34:54 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-15 23:34:54 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 192.168.1.33 at 2013-11-15 23:34:54 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.1.33 at 2013-11-15 23:34:54 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.33 at 2013-11-15 23:34:54 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 192.168.1.33 at 2013-11-15 23:34:54 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-15 23:34:54 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 192.168.1.33 at 2013-11-15 23:34:54 +0000
+
+
+Started GET "/assets/series.js?body=1" for 192.168.1.33 at 2013-11-15 23:34:54 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-15 23:34:54 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-15 23:34:54 +0000
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-15 23:34:55 +0000
+
+
+Started GET "/series/3" for 192.168.1.33 at 2013-11-15 23:36:25 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mSeries Load (0.5ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 3]]
+  Rendered series/show.html.haml within layouts/inicio (13.1ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 135ms (Views: 130.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 192.168.1.33 at 2013-11-15 23:36:25 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 192.168.1.33 at 2013-11-15 23:36:25 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 192.168.1.33 at 2013-11-15 23:36:25 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.33 at 2013-11-15 23:36:25 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.33 at 2013-11-15 23:36:25 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 192.168.1.33 at 2013-11-15 23:36:25 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.33 at 2013-11-15 23:36:25 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.33 at 2013-11-15 23:36:25 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 192.168.1.33 at 2013-11-15 23:36:25 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 192.168.1.33 at 2013-11-15 23:36:25 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 192.168.1.33 at 2013-11-15 23:36:25 +0000
+
+
+Started GET "/assets/series.js?body=1" for 192.168.1.33 at 2013-11-15 23:36:25 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 192.168.1.33 at 2013-11-15 23:36:25 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.33 at 2013-11-15 23:36:25 +0000
+
+
+Started GET "/assets/logo_principal.png" for 192.168.1.33 at 2013-11-15 23:36:25 +0000
