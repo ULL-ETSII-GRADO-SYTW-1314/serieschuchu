@@ -249,7 +249,11 @@ body {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	width: 380px !important;
+	width: 380px !important; 
+	a {
+		color: #434343;
+		text-decoration:none;
+	}
 }
 .tabla-episodeos {
 	border-collapse: separate;

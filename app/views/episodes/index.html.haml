@@ -24,7 +24,8 @@
                     x
                     = '%02d' % episode.numero_episodio
                   %td.nombre_series
-                    = episode.nombre
+                    %a{:href=>"/series/#{@series.id}/episodes/#{episode.id}/links"} 
+                      =episode.nombre
           .show-sinopsis
             .media Agregar Episodio
             %p
