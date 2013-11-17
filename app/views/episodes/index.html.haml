@@ -1,0 +1,50 @@
+- @series = Series.find(params[:series_id])
+.show
+  .show-col-1
+    %img{:src=>"#{@series.enlace_imagen}"}
+  .show-col-2
+    .show-titulo
+      = @series.nombre
+    .show-menu
+    %ul{:class=>"nav nav-tabs",:id=>"myTab"}
+      %li
+        %a{:href=>"/series/#{@series.id}"} Información
+      %li{:class=>"active"}
+        %a{:href=>"#episodios","data-toggle"=>"tab"} Episodios
+    #myTabContent{:class=>"tab-content"}
+      #episodios{:class=>"tab-pane fade in active"}
+        .show-info
+          .media Lista de episodios
+          .show-info-tabla
+            %table.tabla-episodios
+              - @series.episodes.each do |episode|
+                %tr
+                  %td.numeros_series
+                    = episode.numero_temporada
+                    x
+                    = '%02d' % episode.numero_episodio
+                  %td.nombre_series
+                    = episode.nombre
+          .show-sinopsis
+            .media Agregar Episodio
+            %p
+              = form_for ([@series, @series.episodes.build]) do |f|
+                #campo1.field
+                  = f.label :nombre
+                  %br
+                  = f.text_field :nombre
+                #campo2.field
+                  = f.label :numero_temporada
+                  %br
+                  = f.text_field :numero_temporada
+                #campo3.field
+                  = f.label :numero_episodio
+                  %br
+                  = f.text_field :numero_episodio
+                #enviar.actions
+                  = f.submit
+
+
+
+  .show-col-3
+    Col3

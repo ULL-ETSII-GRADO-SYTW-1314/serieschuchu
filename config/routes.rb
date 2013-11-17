@@ -1,4 +1,7 @@
 Serieschuchu::Application.routes.draw do
+  get "links/index"
+  get "link/index"
+  get "episodes/index"
   resources :series
 
   get "inicio/portada"
@@ -63,6 +66,8 @@ Serieschuchu::Application.routes.draw do
 
   #asociando las rutas de los episodeos con el de las series
   resources :series do
-	resources :episodes
+  	resources :episodes do
+        resources :links
+     end
   end
 end

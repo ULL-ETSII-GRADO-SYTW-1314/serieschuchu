@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131115220122) do
+ActiveRecord::Schema.define(version: 20131117023127) do
 
   create_table "episodes", force: true do |t|
     t.string   "nombre"
@@ -23,6 +23,19 @@ ActiveRecord::Schema.define(version: 20131115220122) do
   end
 
   add_index "episodes", ["series_id"], name: "index_episodes_on_series_id"
+
+  create_table "links", force: true do |t|
+    t.string   "enlace"
+    t.string   "idioma"
+    t.string   "subtitulos"
+    t.integer  "episode_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "links", ["episode_id"], name: "index_links_on_episode_id"
+  add_index "links", ["user_id"], name: "index_links_on_user_id"
 
   create_table "series", force: true do |t|
     t.string   "nombre"

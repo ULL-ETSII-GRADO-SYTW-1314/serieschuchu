@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  numero_temporada: 1
+  numero_episodio: 1
+  series_id: 
+
+two:
+  nombre: MyString
+  numero_temporada: 1
+  numero_episodio: 1
+  series_id: 

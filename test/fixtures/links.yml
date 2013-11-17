@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  enlace: MyString
+  idioma: MyString
+  subtitulos: MyString
+  episode_id: 
+  user_id: 
+
+two:
+  enlace: MyString
+  idioma: MyString
+  subtitulos: MyString
+  episode_id: 
+  user_id: 

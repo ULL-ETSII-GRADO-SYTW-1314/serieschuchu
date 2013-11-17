@@ -1,0 +1,21 @@
+- @episode = Episode.find(params[:episode_id])
+%h1 Links#index
+%p Find me in app/views/links/index.html.haml
+-@episode.links.each do |elLink|
+	= elLink.enlace
+	%br
+%h2 Crear nuevo enlace
+%form{:action=>"/series/#{params[:series_id]}/episodes/#{params[:episode_id]}/links",:method=>"post",:class=>"new_link",:id=>"new_link"}
+	= hidden_field_tag(request_forgery_protection_token.to_s, form_authenticity_token)
+	%label Enlace
+	%input{:type=>"text",:name=>"link[enlace]"}
+	%br
+	%label Idioma
+	%input{:type=>"text",:name=>"link[idioma]"}
+	%br
+	%label Subtitulos
+	%input{:type=>"text",:name=>"link[subtitulos]"}
+	%br
+	%input{:type=>"hidden",:name=>"link[user_id]",:value=>current_user.id}
+	%input{:type=>"hidden",:name=>"link[episode_id]",:value=>params[:episode_id]}
+	%input{:type=>"submit"}
