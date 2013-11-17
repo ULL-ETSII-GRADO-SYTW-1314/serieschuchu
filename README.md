@@ -20,3 +20,4 @@ Changelog
 	* Agregado bootstrap
 	* Menu estilo "tab" en la vista show de series
 	* Creado el modelo Episode y enlazado con las series
+* 17/11/2013: agregado metodo para añadir enlaces a cada episodio
