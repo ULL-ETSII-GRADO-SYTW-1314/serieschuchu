@@ -11,7 +11,7 @@ class FollowShowsController < ApplicationController
 			@follow_show = FollowShow.find(@follow_show_anterior.first.id)
 			@follow_show.destroy
 		end
-		redirect_to "/series/#{params[:series_id]}"
+		redirect_to params[:url_volver]
    end
    def destroy
    		puts "hola estoyt aqui"
