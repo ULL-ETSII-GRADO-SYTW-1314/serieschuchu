@@ -1,6 +1,17 @@
 .show
   .show-col-1
     %img{:src=>"#{@series.enlace_imagen}"}
+    %br
+    - @follow_show = FollowShow.where(user_id: current_user.id, series_id: @series.id)
+    %form{:class=>"seguimiento-form",:method=>"post",:action=>"/series/#{@series.id}/follow_shows",:id=>"new_follow_show"}
+      = hidden_field_tag(request_forgery_protection_token.to_s, form_authenticity_token)
+      %input{:type=>"hidden",:name=>"follow_show[user_id]",:value=>current_user.id}
+      %input{:type=>"hidden",:name=>"follow_show[series_id]",:value=>@series.id}
+      - if @follow_show.count == 0
+        %input{:type=>"submit",:class=>"btn top-20 btn-danger",:value=>"Seguir esta serie"}
+      - else
+        %input{:type=>"submit",:class=>"btn top-20 btn-success",:value=>"Dejar de seguir"}
+    
   .show-col-2
     .show-titulo
       = @series.nombre

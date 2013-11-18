@@ -66,6 +66,7 @@ Serieschuchu::Application.routes.draw do
 
   #asociando las rutas de los episodeos con el de las series
   resources :series do
+    resources :follow_shows
   	resources :episodes do
         resources :links
      end
