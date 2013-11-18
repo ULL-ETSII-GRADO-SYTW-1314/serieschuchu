@@ -20,29 +20,55 @@
         .show-info
           .media Lista de enlaces
           .show-info-tabla
-            %table.tabla-episodios
+            %table.tabla-episodios.table
               -@episode.links.each do |elLink|
                 %tr
-                  %td
-                    = elLink.enlace
+                  %th Idioma
+                  %th Subtitulos
+                  %th Enlace
+                %tr
                   %td
                     = elLink.idioma
                   %td
                     = elLink.subtitulos
+                  %td.enlace-link
+                    %a{:href=>elLink.enlace}
+                      = elLink.enlace
           .show-sinopsis
             .media Agregar enlace
             %p
               %form{:action=>"/series/#{params[:series_id]}/episodes/#{params[:episode_id]}/links",:method=>"post",:class=>"new_link",:id=>"new_link"}
                 = hidden_field_tag(request_forgery_protection_token.to_s, form_authenticity_token)
-                %label Enlace
-                %input{:type=>"text",:name=>"link[enlace]"}
-                %br
-                %label Idioma
-                %input{:type=>"text",:name=>"link[idioma]"}
-                %br
-                %label Subtitulos
-                %input{:type=>"text",:name=>"link[subtitulos]"}
-                %br
+                %table.table
+                  %tr
+                    %td
+                      %label Idioma del vídeo
+                    %td
+                      %select{:name=>"link[idioma]"}
+                        %option{:value=>"Castellano"} Castellano
+                        %option{:value=>"Inglés"} Inglés
+                        %option{:value=>"Latino"} Español Latino
+                        %option{:value=>"Catalán"} Catalán
+                        %option{:value=>"Euskera"} Euskera
+                        %option{:value=>"Gallego"} Gallego
+                        %option{:value=>"Sin Audio"} Sin Audio
+                  %tr
+                    %td
+                      %label Idioma de los subtítulos
+                    %td
+                      %select{:name=>"link[subtitulos]"}
+                        %option{:value=>"Sin subtítulos"} Sin subtítulos
+                        %option{:value=>"Castellano"} Castellano
+                        %option{:value=>"Inglés"} Inglés
+                        %option{:value=>"Latino"} Español Latino
+                        %option{:value=>"Catalán"} Catalán
+                        %option{:value=>"Euskera"} Euskera
+                        %option{:value=>"Gallego"} Gallego
+                  %tr
+                    %td
+                      %label Enlace
+                    %td.i-width-300
+                      %input{:type=>"text",:name=>"link[enlace]"}
                 %input{:type=>"hidden",:name=>"link[user_id]",:value=>current_user.id}
                 %input{:type=>"hidden",:name=>"link[episode_id]",:value=>params[:episode_id]}
                 %input{:type=>"submit"}

@@ -16,7 +16,7 @@
         .show-info
           .media Lista de episodios
           .show-info-tabla
-            %table.tabla-episodios
+            %table.tabla-episodios.table
               - @series.episodes.each do |episode|
                 %tr
                   %td.numeros_series
@@ -30,19 +30,25 @@
             .media Agregar episodio
             %p
               = form_for ([@series, @series.episodes.build]) do |f|
-                #campo1.field
-                  = f.label :nombre
-                  %br
-                  = f.text_field :nombre
-                #campo2.field
-                  = f.label :numero_temporada
-                  %br
-                  = f.text_field :numero_temporada
-                #campo3.field
-                  = f.label :numero_episodio
-                  %br
-                  = f.text_field :numero_episodio
-                #enviar.actions
+                %table
+                  %tr
+                    %th
+                      #campo2.field
+                        = f.label :numero_temporada
+                    %th
+                      #campo3.field
+                        = f.label :numero_episodio
+                    %th
+                      #campo1.field
+                        = f.label :nombre
+                  %tr
+                    %td
+                      = f.number_field :numero_temporada
+                    %td              
+                      = f.number_field :numero_episodio
+                    %td.i-width-300
+                      = f.text_field :nombre
+                #enviar.actions.top-20
                   = f.submit
 
 
