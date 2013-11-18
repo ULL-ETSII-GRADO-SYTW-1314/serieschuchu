@@ -1,2 +1,20 @@
-%h1 Inicio#portada
-%p Find me in app/views/inicio/portada.html.haml
+%h1 Bienvenid@ a Serieschuchu
+%p 
+	Serieschuchu es una red social dedicada a compartir enlaces a series colgadas en internet. Permite combinar el visionado de series además de interactuar con otros usuarios acerca de series que te hayan gustado o que pienses que podrían gustarles.
+
+%h2 Últimas series añadidas
+- @series = Series.order(created_at: :desc).limit(8)
+- @series.each do |series|
+	%a{:href=>"/series/#{series.id}"}
+		.tipo-serie-catalogo
+			%img{:src=>series.enlace_imagen}
+			%label #{series.nombre}
+
+%h2 Últimas series seguidas
+- @seguidas = FollowShow.order(created_at: :desc).limit(8)
+- @seguidas.each do |seguida|
+- series = Series.find(seguida.series_id)
+	%a{:href=>"/series/#{series.id}"}
+		.tipo-serie-catalogo
+			%img{:src=>series.enlace_imagen}
+			%label #{series.nombre}

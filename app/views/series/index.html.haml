@@ -1,5 +1,7 @@
-.titular Catálogo
-
+%h1 Catálogo de Serieschuchu
+%p 
+  Nuestro catálogo actual cuenta con un total de #{@series.count} series. Iremos ampliando el catálogo periódicamente.
+%br
 - @series.each do |series|
   %a{:href=>"series/#{series.id}"}
     .tipo-serie-catalogo
