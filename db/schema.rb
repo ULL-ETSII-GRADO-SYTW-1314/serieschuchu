@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131118170621) do
+ActiveRecord::Schema.define(version: 20131118185416) do
 
   create_table "episodes", force: true do |t|
     t.string   "nombre"
@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(version: 20131118170621) do
     t.string   "titulo_original"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "generos"
   end
 
   create_table "users", force: true do |t|
