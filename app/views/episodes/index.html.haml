@@ -27,7 +27,7 @@
                     %a{:href=>"/series/#{@series.id}/episodes/#{episode.id}/links"} 
                       =episode.nombre
           .show-sinopsis
-            .media Agregar Episodio
+            .media Agregar episodio
             %p
               = form_for ([@series, @series.episodes.build]) do |f|
                 #campo1.field

@@ -51379,3 +51379,2045 @@ Completed 200 OK in 46ms (Views: 41.3ms | ActiveRecord: 1.7ms)
 
 
 Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:47:43 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:50:19 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 52ms (Views: 48.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:50:19 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:50:20 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (0.3ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 107ms (Views: 101.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:50:20 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:50:50 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (19.8ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 53ms (Views: 49.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:50:50 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:50:52 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeries Load (0.3ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.6ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 38ms (Views: 33.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:50:52 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:50:53 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.2ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 118ms (Views: 114.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:50:54 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:50:57 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 39ms (Views: 34.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:50:57 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:50:59 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.1ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 51ms (Views: 47.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:50:59 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-17 23:51:01 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mLink Load (0.4ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."episode_id" = ?[0m  [["episode_id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered links/index.html.haml within layouts/inicio (15.0ms)
+Completed 200 OK in 118ms (Views: 114.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:51:01 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:51:05 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 60ms (Views: 55.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:51:05 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-17 23:51:08 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mLink Load (0.4ms)[0m  SELECT "links".* FROM "links" WHERE "links"."episode_id" = ?  [["episode_id", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered links/index.html.haml within layouts/inicio (14.9ms)
+Completed 200 OK in 45ms (Views: 40.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:51:08 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:51:10 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.5ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 119ms (Views: 115.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:51:10 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-17 23:51:15 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mLink Load (0.4ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."episode_id" = ?[0m  [["episode_id", 1]]
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered links/index.html.haml within layouts/inicio (14.9ms)
+Completed 200 OK in 45ms (Views: 41.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:51:15 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:51:20 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 52ms (Views: 47.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:51:20 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-17 23:51:23 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mLink Load (0.3ms)[0m  SELECT "links".* FROM "links" WHERE "links"."episode_id" = ?  [["episode_id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered links/index.html.haml within layouts/inicio (14.8ms)
+Completed 200 OK in 110ms (Views: 106.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:51:24 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:51:29 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.5ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.5ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 53ms (Views: 49.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:51:29 +0000
+
+
+Started GET "/series" for 127.0.0.1 at 2013-11-17 23:51:37 +0000
+Processing by SeriesController#index as HTML
+  [1m[36mSeries Load (0.6ms)[0m  [1mSELECT "series".* FROM "series"[0m
+  Rendered series/index.html.haml within layouts/inicio (4.1ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 38ms (Views: 34.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:51:37 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:51:39 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.6ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 103ms (Views: 97.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:51:39 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:51:46 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 53ms (Views: 49.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:51:46 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:51:48 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (0.3ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 39ms (Views: 33.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:51:48 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:51:49 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.7ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 118ms (Views: 113.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:51:50 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:51:51 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.6ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 39ms (Views: 33.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:51:51 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:51:56 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 53ms (Views: 49.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:51:57 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-17 23:51:58 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mLink Load (0.3ms)[0m  SELECT "links".* FROM "links" WHERE "links"."episode_id" = ?  [["episode_id", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered links/index.html.haml within layouts/inicio (14.9ms)
+Completed 200 OK in 45ms (Views: 41.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:51:58 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:52:00 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.6ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 52ms (Views: 48.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:52:00 +0000
+
+
+Started GET "/series/1/episodes/2/links" for 127.0.0.1 at 2013-11-17 23:52:03 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"2"}
+  [1m[36mSeries Load (0.5ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."episode_id" = ?[0m  [["episode_id", 2]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered links/index.html.haml within layouts/inicio (14.1ms)
+Completed 200 OK in 44ms (Views: 40.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:52:03 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:52:05 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 52ms (Views: 48.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:52:05 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:52:30 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (0.3ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (68.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 105ms (Views: 99.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:52:31 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:52:32 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.3ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 52ms (Views: 48.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:52:32 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-17 23:52:34 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."episode_id" = ?[0m  [["episode_id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered links/index.html.haml within layouts/inicio (14.6ms)
+Completed 200 OK in 45ms (Views: 41.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:52:34 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:52:53 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.6ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 103ms (Views: 98.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:52:53 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:52:54 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 52ms (Views: 48.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:52:54 +0000
+
+
+Started GET "/series/1/episodes/2/links" for 127.0.0.1 at 2013-11-17 23:53:00 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"2"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mLink Load (0.3ms)[0m  SELECT "links".* FROM "links" WHERE "links"."episode_id" = ?  [["episode_id", 2]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered links/index.html.haml within layouts/inicio (14.7ms)
+Completed 200 OK in 45ms (Views: 41.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:53:00 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:53:05 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.3ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 118ms (Views: 115.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:53:06 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:53:08 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.6ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 41ms (Views: 34.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:53:08 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:53:13 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (19.0ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 53ms (Views: 49.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:53:13 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-17 23:53:15 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mLink Load (0.4ms)[0m  SELECT "links".* FROM "links" WHERE "links"."episode_id" = ?  [["episode_id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered links/index.html.haml within layouts/inicio (17.4ms)
+Completed 200 OK in 118ms (Views: 114.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:53:15 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:53:45 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.8ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 53ms (Views: 48.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:53:45 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:53:46 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeries Load (0.3ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.7ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 38ms (Views: 33.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:53:46 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:53:48 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.6ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.5ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.3ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 120ms (Views: 115.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:53:48 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:53:51 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.8ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 40ms (Views: 34.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:53:51 +0000
+
+
+Started GET "/series" for 127.0.0.1 at 2013-11-17 23:54:19 +0000
+Processing by SeriesController#index as HTML
+  [1m[35mSeries Load (0.5ms)[0m  SELECT "series".* FROM "series"
+  Rendered series/index.html.haml within layouts/inicio (4.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 37ms (Views: 33.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:54:19 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:54:20 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 106ms (Views: 99.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:54:21 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:54:23 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.5ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.6ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 52ms (Views: 48.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:54:23 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-17 23:54:27 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."episode_id" = ?[0m  [["episode_id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered links/index.html.haml within layouts/inicio (14.7ms)
+Completed 200 OK in 45ms (Views: 41.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:54:27 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:54:31 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.5ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.4ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 117ms (Views: 113.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:54:31 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:55:02 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 40ms (Views: 34.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:55:02 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:55:19 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.2ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 52ms (Views: 48.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:55:19 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:55:20 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeries Load (0.3ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.6ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 103ms (Views: 98.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:55:20 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:55:20 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.6ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 40ms (Views: 34.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:55:21 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:55:29 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 53ms (Views: 49.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:55:29 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:55:30 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (0.3ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 39ms (Views: 34.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:55:30 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:55:55 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (19.7ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 119ms (Views: 115.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:55:55 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-17 23:55:57 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."episode_id" = ?[0m  [["episode_id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered links/index.html.haml within layouts/inicio (14.9ms)
+Completed 200 OK in 45ms (Views: 41.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:55:57 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:56:02 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 51ms (Views: 47.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:56:02 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:56:04 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (0.3ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 110ms (Views: 105.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:56:04 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:56:33 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.4ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 52ms (Views: 48.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:56:33 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:56:35 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.9ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 40ms (Views: 34.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:56:35 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:56:36 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (20.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 120ms (Views: 116.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:56:36 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-17 23:56:39 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[35mSeries Load (0.5ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mLink Load (0.4ms)[0m  SELECT "links".* FROM "links" WHERE "links"."episode_id" = ?  [["episode_id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered links/index.html.haml within layouts/inicio (15.3ms)
+Completed 200 OK in 46ms (Views: 41.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:56:39 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:56:41 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.5ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.5ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 51ms (Views: 48.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:56:41 +0000
+
+
+Started GET "/series/1/episodes/2/links" for 127.0.0.1 at 2013-11-17 23:56:43 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"2"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."episode_id" = ?[0m  [["episode_id", 2]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered links/index.html.haml within layouts/inicio (14.2ms)
+Completed 200 OK in 111ms (Views: 107.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:56:43 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:56:46 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 52ms (Views: 48.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:56:46 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:56:57 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (0.3ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 38ms (Views: 33.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:56:57 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:56:58 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.2ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 119ms (Views: 114.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:56:58 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-17 23:58:13 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mLink Load (0.4ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."episode_id" = ?[0m  [["episode_id", 1]]
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered links/index.html.haml within layouts/inicio (14.9ms)
+Completed 200 OK in 45ms (Views: 41.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:58:13 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:58:16 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 51ms (Views: 47.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:58:16 +0000
+
+
+Started GET "/series/1/episodes/2/links" for 127.0.0.1 at 2013-11-17 23:58:17 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"2"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mLink Load (0.3ms)[0m  SELECT "links".* FROM "links" WHERE "links"."episode_id" = ?  [["episode_id", 2]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered links/index.html.haml within layouts/inicio (14.0ms)
+Completed 200 OK in 111ms (Views: 107.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:58:18 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:58:19 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.4ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 53ms (Views: 48.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:58:19 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-17 23:58:27 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mLink Load (0.4ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."episode_id" = ?[0m  [["episode_id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered links/index.html.haml within layouts/inicio (15.2ms)
+Completed 200 OK in 45ms (Views: 41.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:58:27 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:58:30 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 119ms (Views: 115.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:58:30 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-17 23:58:32 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mLink Load (0.3ms)[0m  SELECT "links".* FROM "links" WHERE "links"."episode_id" = ?  [["episode_id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered links/index.html.haml within layouts/inicio (14.7ms)
+Completed 200 OK in 45ms (Views: 41.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:58:32 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:58:43 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.2ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 52ms (Views: 48.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:58:43 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:58:44 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeries Load (0.3ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.6ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 38ms (Views: 33.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:58:45 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:58:46 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 118ms (Views: 115.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:58:46 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:58:57 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 39ms (Views: 33.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:58:57 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:59:04 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.6ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.9ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 52ms (Views: 48.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:59:04 +0000
+
+
+Started GET "/series" for 127.0.0.1 at 2013-11-17 23:59:06 +0000
+Processing by SeriesController#index as HTML
+  [1m[36mSeries Load (0.5ms)[0m  [1mSELECT "series".* FROM "series"[0m
+  Rendered series/index.html.haml within layouts/inicio (4.1ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 105ms (Views: 101.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:59:06 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:59:08 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.7ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 39ms (Views: 33.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:59:08 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:59:11 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 51ms (Views: 48.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:59:11 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-17 23:59:12 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (0.3ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 105ms (Views: 99.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:59:12 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:59:30 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.9ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 53ms (Views: 48.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:59:30 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-17 23:59:32 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."episode_id" = ?[0m  [["episode_id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered links/index.html.haml within layouts/inicio (14.6ms)
+Completed 200 OK in 45ms (Views: 41.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:59:32 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-17 23:59:38 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (19.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 119ms (Views: 115.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:59:38 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-17 23:59:40 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mLink Load (0.5ms)[0m  SELECT "links".* FROM "links" WHERE "links"."episode_id" = ?  [["episode_id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered links/index.html.haml within layouts/inicio (15.0ms)
+Completed 200 OK in 46ms (Views: 42.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-17 23:59:40 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-18 00:00:02 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mLink Load (0.3ms)[0m  SELECT "links".* FROM "links" WHERE "links"."episode_id" = ?  [["episode_id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered links/index.html.haml within layouts/inicio (33.5ms)
+Completed 200 OK in 65ms (Views: 61.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-11-18 00:00:03 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-18 00:00:03 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2013-11-18 00:00:03 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:03 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:03 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:03 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:03 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:03 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:03 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:03 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:03 +0000
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:03 +0000
+
+
+Started GET "/assets/link.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:03 +0000
+
+
+Started GET "/assets/series.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:03 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:03 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:03 +0000
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:00:03 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-18 00:00:44 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mLink Load (0.3ms)[0m  SELECT "links".* FROM "links" WHERE "links"."episode_id" = ?  [["episode_id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered links/index.html.haml within layouts/inicio (33.4ms)
+Completed 200 OK in 73ms (Views: 69.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-11-18 00:00:45 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-18 00:00:45 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2013-11-18 00:00:45 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:45 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:45 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:45 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:45 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:45 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:45 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:45 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:45 +0000
+
+
+Started GET "/assets/link.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:45 +0000
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:45 +0000
+
+
+Started GET "/assets/series.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:45 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:45 +0000
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:00:45 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:45 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-18 00:00:55 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mLink Load (0.3ms)[0m  SELECT "links".* FROM "links" WHERE "links"."episode_id" = ?  [["episode_id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered links/index.html.haml within layouts/inicio (33.0ms)
+Completed 200 OK in 143ms (Views: 139.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-11-18 00:00:55 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-18 00:00:55 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2013-11-18 00:00:55 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:55 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:55 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:55 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:55 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:55 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:55 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:55 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:55 +0000
+
+
+Started GET "/assets/link.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:55 +0000
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:55 +0000
+
+
+Started GET "/assets/series.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:55 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:55 +0000
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:00:55 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-18 00:00:55 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:01:03 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.7ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 52ms (Views: 48.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:01:03 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-18 00:01:05 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.5ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 112ms (Views: 106.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:01:05 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:01:06 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.5ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (19.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 53ms (Views: 49.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:01:06 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-18 00:01:09 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mLink Load (0.3ms)[0m  SELECT "links".* FROM "links" WHERE "links"."episode_id" = ?  [["episode_id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered links/index.html.haml within layouts/inicio (33.0ms)
+Completed 200 OK in 63ms (Views: 59.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:01:09 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:01:23 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.3ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 121ms (Views: 118.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:01:24 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-18 00:01:25 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.6ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 39ms (Views: 33.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:01:25 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:01:26 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 52ms (Views: 48.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:01:26 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:01:44 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (36.1ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 140ms (Views: 136.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-11-18 00:01:44 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-18 00:01:44 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2013-11-18 00:01:44 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-18 00:01:44 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-18 00:01:44 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-18 00:01:44 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-18 00:01:44 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-11-18 00:01:44 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 127.0.0.1 at 2013-11-18 00:01:44 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 127.0.0.1 at 2013-11-18 00:01:44 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2013-11-18 00:01:44 +0000
+
+
+Started GET "/assets/link.js?body=1" for 127.0.0.1 at 2013-11-18 00:01:44 +0000
+
+
+Started GET "/assets/series.js?body=1" for 127.0.0.1 at 2013-11-18 00:01:44 +0000
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2013-11-18 00:01:44 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-18 00:01:45 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-18 00:01:45 +0000
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:01:45 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-18 00:01:47 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.6ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 39ms (Views: 34.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:01:47 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:01:50 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (35.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 142ms (Views: 138.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:01:50 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-18 00:01:53 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 40ms (Views: 34.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:01:53 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-18 00:01:53 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 40ms (Views: 33.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:01:53 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:01:54 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (19.7ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 123ms (Views: 118.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:01:54 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-18 00:02:11 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.8ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 40ms (Views: 33.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:02:11 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:02:13 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 52ms (Views: 48.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:02:14 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-18 00:02:26 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (0.3ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 105ms (Views: 100.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:02:26 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:02:27 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.6ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 53ms (Views: 49.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:02:27 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-18 00:02:29 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mLink Load (0.4ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."episode_id" = ?[0m  [["episode_id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered links/index.html.haml within layouts/inicio (35.3ms)
+Completed 200 OK in 69ms (Views: 64.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:02:30 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:02:32 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 120ms (Views: 116.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:02:32 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-18 00:02:33 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.7ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 39ms (Views: 33.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:02:34 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:02:35 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.5ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.1ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 51ms (Views: 47.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:02:35 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-18 00:02:37 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mLink Load (0.4ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."episode_id" = ?[0m  [["episode_id", 1]]
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered links/index.html.haml within layouts/inicio (15.4ms)
+Completed 200 OK in 45ms (Views: 41.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:02:37 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:02:41 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 119ms (Views: 115.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:02:41 +0000
+
+
+Started GET "/series/1/episodes/2/links" for 127.0.0.1 at 2013-11-18 00:02:43 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"2"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mLink Load (0.3ms)[0m  SELECT "links".* FROM "links" WHERE "links"."episode_id" = ?  [["episode_id", 2]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered links/index.html.haml within layouts/inicio (14.4ms)
+Completed 200 OK in 44ms (Views: 40.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:02:43 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:02:45 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.3ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 195ms (Views: 191.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:02:45 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.5ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 117ms (Views: 112.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:02:45 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-18 00:02:47 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mLink Load (0.4ms)[0m  SELECT "links".* FROM "links" WHERE "links"."episode_id" = ?  [["episode_id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered links/index.html.haml within layouts/inicio (15.3ms)
+Completed 200 OK in 45ms (Views: 41.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:02:47 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:02:55 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.2ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 51ms (Views: 47.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:02:55 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-18 00:02:57 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.5ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 104ms (Views: 99.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:02:57 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:02:58 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 52ms (Views: 48.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:02:59 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-18 00:03:01 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (0.3ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 40ms (Views: 34.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:03:01 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:03:03 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.5ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.0ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 119ms (Views: 115.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:03:03 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-18 00:03:07 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.6ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 39ms (Views: 33.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:03:07 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:03:08 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 51ms (Views: 47.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:03:08 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-18 00:03:10 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (0.5ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 43ms (Views: 35.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:03:10 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:03:12 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.2ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 52ms (Views: 48.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:03:12 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-18 00:03:15 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mLink Load (0.5ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."episode_id" = ?[0m  [["episode_id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered links/index.html.haml within layouts/inicio (15.0ms)
+Completed 200 OK in 45ms (Views: 40.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:03:15 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:03:20 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (19.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 52ms (Views: 49.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:03:20 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-18 00:03:22 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (1.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 105ms (Views: 99.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:03:22 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:03:25 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.4ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 51ms (Views: 47.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:03:25 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-18 00:04:16 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeries Load (0.3ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.6ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 38ms (Views: 33.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:04:16 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:04:17 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 118ms (Views: 114.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:04:17 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-18 00:04:23 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.3ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mLink Load (0.3ms)[0m  SELECT "links".* FROM "links" WHERE "links"."episode_id" = ?  [["episode_id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered links/index.html.haml within layouts/inicio (15.1ms)
+Completed 200 OK in 45ms (Views: 41.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:04:23 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:04:26 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.5ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 52ms (Views: 48.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:04:26 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-18 00:04:28 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeries Load (0.3ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.6ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 104ms (Views: 99.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:04:28 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:04:29 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 52ms (Views: 48.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:04:29 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-18 00:04:34 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (0.3ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 39ms (Views: 33.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:04:34 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:04:35 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.2ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 116ms (Views: 112.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:04:35 +0000
+
+
+Started GET "/series/1/episodes/1/links" for 127.0.0.1 at 2013-11-18 00:04:37 +0000
+Processing by LinksController#index as HTML
+  Parameters: {"series_id"=>"1", "episode_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.3ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."episode_id" = ?[0m  [["episode_id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered links/index.html.haml within layouts/inicio (14.7ms)
+Completed 200 OK in 46ms (Views: 41.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:04:37 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:04:39 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 51ms (Views: 48.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:04:39 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-18 00:04:40 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (0.3ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 39ms (Views: 33.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:04:40 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-18 00:04:40 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (5.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 106ms (Views: 100.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:04:40 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:04:49 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (19.1ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 52ms (Views: 48.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:04:49 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-18 00:04:51 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeries Load (0.3ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.7ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 40ms (Views: 34.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:04:51 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:04:56 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[36mSeries Load (0.4ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEpisode Load (0.4ms)[0m  SELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 116ms (Views: 112.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:04:56 +0000
+
+
+Started GET "/series/1" for 127.0.0.1 at 2013-11-18 00:05:15 +0000
+Processing by SeriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered series/show.html.haml within layouts/inicio (2.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 40ms (Views: 34.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:05:15 +0000
+
+
+Started GET "/series/1/episodes" for 127.0.0.1 at 2013-11-18 00:05:21 +0000
+Processing by EpisodesController#index as HTML
+  Parameters: {"series_id"=>"1"}
+  [1m[35mSeries Load (0.4ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mEpisode Load (0.4ms)[0m  [1mSELECT "episodes".* FROM "episodes" WHERE "episodes"."series_id" = ?[0m  [["series_id", 1]]
+  Rendered episodes/index.html.haml within layouts/inicio (18.2ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 52ms (Views: 48.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-11-18 00:05:21 +0000

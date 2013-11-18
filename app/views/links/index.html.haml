@@ -14,11 +14,11 @@
         %a{:href=>"/series/#{@series.id}/episodes"} Episodios
       %li{:class=>"active"}
         %a{:href=>"#episodios","data-toggle"=>"tab"}
-          Enlaces de #{@episode.numero_temporada} x #{@episode.numero_episodio}
+          Enlaces de #{@episode.numero_temporada}x#{'%02d' % @episode.numero_episodio}
     #myTabContent{:class=>"tab-content"}
       #episodios{:class=>"tab-pane fade in active"}
         .show-info
-          .media Lista de episodios
+          .media Lista de enlaces
           .show-info-tabla
             %table.tabla-episodios
               -@episode.links.each do |elLink|
@@ -30,7 +30,7 @@
                   %td
                     = elLink.subtitulos
           .show-sinopsis
-            .media Agregar Enlace
+            .media Agregar enlace
             %p
               %form{:action=>"/series/#{params[:series_id]}/episodes/#{params[:episode_id]}/links",:method=>"post",:class=>"new_link",:id=>"new_link"}
                 = hidden_field_tag(request_forgery_protection_token.to_s, form_authenticity_token)
