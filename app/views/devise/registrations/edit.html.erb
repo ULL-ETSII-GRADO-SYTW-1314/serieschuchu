@@ -10,6 +10,11 @@
     <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
       <%= devise_error_messages! %>
 
+			<div class="devise-input"><%= f.label :username %>
+			  <br/>
+				<%= f.text_field :username, :autofocus => true %>
+			</div>
+
       <div class="devise-input"><%= f.label :email %>
 			  <br/>
         <%= f.email_field :email, :autofocus => true %>
@@ -22,27 +27,25 @@
       <% end %>
 
       <div class="devise-input">
-			  <%= f.label :password %> <i>(dejar en blanco si no quieres que cambie)</i>
-				<br/>
-        <%= f.password_field :password, :autocomplete => "off", :placeholder => "Password" %>
+			  <!--<%= f.label :password %> <i>(dejar en blanco si no quieres que cambie)</i>
+				<br/>-->
+        <%= f.password_field :password, :autocomplete => "off", :placeholder => "Password(dejar en blanco si no quieres que cambie)" %>
 		  </div>
 
       <div class="devise-input">
-			  <%= f.label :password_confirmation %>
-				<br/>
+				<!--<%= f.label :password_confirmation %>
+				<br/>-->
         <%= f.password_field :password_confirmation, :placeholder => "Password confirmation" %>
 			</div>
 
       <div class="devise-input">
-			  <%= f.label :current_password %> <i>(Necesitamos tu contraseña actual para confirmar tus cambios)</i>
-			  <br />
-        <%= f.password_field :current_password, :placeholder => "Current password" %>
+        <!--<%= f.label :current_password %> <i>(Necesitamos tu contraseña actual para confirmar tus cambios)</i>
+			  <br />-->
+        <%= f.password_field :current_password, :placeholder => "Password actual" %>
 		  </div>
 
       <div><%= f.submit "Modificar" %></div>
     <% end %>
-
-  <h3>Cancelar mi cuenta</h3>
 
   <p>¿Quieres cancelar tu cuenta? <%= button_to "Cancelar mi cuenta", registration_path(resource_name), :data => { :confirm => "¿Estás seguro de querer cancelarla?" }, :method => :delete %></p>
 
