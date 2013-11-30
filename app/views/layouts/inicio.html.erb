@@ -32,7 +32,7 @@
 				<%= image_tag avatar_url(current_user) %>
 			</div>
 			<div class="login-top-texto">
-				<%=current_user.username%> 
+				<%=link_to(current_user.username, edit_user_registration_path(current_user))%> 
 				<br/>
 				<label class="mini">
 					<%=link_to("Sign out", destroy_user_session_path, :method => :delete) %>
