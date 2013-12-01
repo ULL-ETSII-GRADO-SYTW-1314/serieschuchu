@@ -22,3 +22,4 @@ Changelog
 	* Creado el modelo Episode y enlazado con las series
 * 17/11/2013: agregado metodo para añadir enlaces a cada episodio
 * 18/11/2013: agregado el seguimiento de series por parte del usuario
+* 1/12/2013: Agregado deployment en heroku
