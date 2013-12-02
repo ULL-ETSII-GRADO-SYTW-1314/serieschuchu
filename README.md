@@ -60,7 +60,7 @@ Changelog
 	* Cambio logo
 	* Cambio en el menú de navegación
 	* Merge rama master-series
-* 15/11/2013
+* 15/11/2013:
 	* Agregado bootstrap
 	* Menú estilo "tab" en la vista show de series
 	* Creado el modelo Episode y enlazado con las series
@@ -72,6 +72,10 @@ Changelog
 	* Merge rama master-heroku
 	* Creada la rama modificar-readme
 	* Mejorado el README
+* 2/12/2013:
+  * Creada la rama test
+  * Implementados test para Welcome
+  * Implementados algunos test para los usuarios con devise
 
 
 --------------------------------
