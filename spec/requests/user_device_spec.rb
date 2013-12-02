@@ -11,6 +11,31 @@ describe "Gem Devise" do
     it { should have_content('Sign in') }
   end
 
+  describe "Registrarse" do
+    before { visit new_user_registration_path }
+    let(:submit) { "Registrar" }
+
+    describe "con información errónea" do
+      it "no debería crear un usuario" do
+        expect { click_button submit }.not_to change(User, :count)
+      end
+    end
+
+    # El mínimo de la contraseña es de 8 caracteres
+    describe "con información correcta" do
+      before do
+        fill_in "Nickname",                 with: "Example User"
+        fill_in "Email",                    with: "user@example.com"
+        fill_in "Password",                 with: "foobar12"
+        fill_in "Password confirmation",    with: "foobar12"
+      end
+
+      it "debería crear un usuario" do
+        expect { click_button submit }.to change(User, :count).by(1)
+      end
+    end
+  end
+
   describe "Página de login" do
     before { visit new_user_session_path }
 
