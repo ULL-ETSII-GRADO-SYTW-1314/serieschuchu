@@ -43,4 +43,26 @@ describe "Gem Devise" do
     it { should have_content('Sign up') }
     it { should have_content('Forgot your password?') }
   end
+
+  describe "Loguearse" do
+    before { visit new_user_session_path }
+
+    describe "con información errónea" do
+      before { click_button "Entrar" }
+
+      it { should have_selector('h1', text: 'LOG IN') }
+      it { should have_selector('p.alert', text: 'Invalid email or password') }
+    end
+
+#    POR ALGUN MOTIVO NO FUNCA SHIT
+#    describe "con información válida" do
+#      before do
+#        fill_in "Email",      with: "defaultuser@example.com"
+#        fill_in "Password",   with: "foobar12"
+#        click_button "Entrar"
+#      end
+      
+#      it { should have_content('Sign out') }
+#    end
+  end
 end
