@@ -13,5 +13,10 @@ describe "Welcome" do
       visit '/'
       expect(page).to have_content('LOGIN')
     end
+
+    it "Debería tener un título base" do
+      visit '/'
+      expect(page).to have_title('Serieschuchu')
+    end
   end
 end
