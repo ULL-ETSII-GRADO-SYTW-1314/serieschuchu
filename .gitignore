@@ -1,0 +1,22 @@
+# Ignorar configuración de bundler
+/.bundle
+
+# Ignorar archivos temporales y de intercambio
+*~
+*.swp
+
+# Ignorar logs y archivos temporales
+/log/*.log
+/tmp
+
+# Ignorar la base de datos por defecto SQLITE
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignorar otros ficheros innecesarios
+database.yml
+doc/
+.project
+.DS_Store
+.idea
+.secret
