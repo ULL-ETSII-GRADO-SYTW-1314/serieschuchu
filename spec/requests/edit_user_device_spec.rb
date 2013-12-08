@@ -15,7 +15,12 @@ describe "Gem Devise" do
     before { click_button "Registrar" }
     
     before { visit edit_user_registration_path }
+  
     it { should have_selector('h1', text: 'MODIFICAR CUENTA') }
     it { should have_selector('h1', text: 'SERIESCHUCHU') }
+    it { should have_content('Back') }
+
+    before { click_button "Modificar" }
+    it { should have_content("Current password can't be blank") }
   end
 end
