@@ -76,7 +76,8 @@ Changelog
   * Creada la rama test
   * Implementados test para Welcome
   * Implementados algunos test para los usuarios con devise
-
+* 8/12/2013:
+  * Implementados algunos test para la modificación de cuenta
 
 --------------------------------
 
