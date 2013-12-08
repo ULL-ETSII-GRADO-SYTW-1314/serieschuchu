@@ -44,6 +44,8 @@ describe "Gem Devise" do
     
     before { click_button "Modificar" }
     it { should have_content("Current password can't be blank") }
+    it { should have_content("Email can't be blank") }
+    it { should have_content("Password confirmation doesn't match Password") }
     
   end
 end
