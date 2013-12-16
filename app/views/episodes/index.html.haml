@@ -22,6 +22,9 @@
         %a{:href=>"/series/#{@series.id}"} Información
       %li{:class=>"active"}
         %a{:href=>"#episodios","data-toggle"=>"tab"} Episodios
+      %li
+        %a{:href=>"/series/#{@series.id}/comments"} Comentarios
+
     #myTabContent{:class=>"tab-content"}
       #episodios{:class=>"tab-pane fade in active"}
         .show-info
