@@ -33,7 +33,8 @@
         <%= f.password_field :password_confirmation, :placeholder => "Password confirmation" %>
 			</div>
 
-      <div class="devise-input">
+      <div class="devise-input"><%= f.label :current_password %>
+        </br>
         <!--<%= f.label :current_password %> <i>(Necesitamos tu contraseña actual para confirmar tus cambios)</i>
 			  <br />-->
         <%= f.password_field :current_password, :placeholder => "Password actual" %>
