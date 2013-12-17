@@ -38,3 +38,7 @@
           .media Comentarios de #{@series.nombre}
           .show-info-tabla
             %table.tabla-comentarios.table
+              - @series.comments.each do |comment|
+                %tr
+                  %td= (User.find(current_user.id)).username
+                  %td= comment.content
