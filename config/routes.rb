@@ -1,8 +1,10 @@
 Serieschuchu::Application.routes.draw do
+  #get "misseries/index"
   get "links/index"
   get "link/index"
   get "episodes/index"
   resources :series
+  resources :misseries
 
   get "inicio/portada"
   get "inicio/index"
