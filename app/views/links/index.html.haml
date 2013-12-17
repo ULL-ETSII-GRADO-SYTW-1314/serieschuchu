@@ -27,7 +27,7 @@
         %a{:href=>"#episodios","data-toggle"=>"tab"}
           Enlaces de #{@episode.numero_temporada}x#{'%02d' % @episode.numero_episodio}
       %li
-        %a{:href=>"/series/#{@series.id}/comentarios"} Comentarios
+        %a{:href=>"/series/#{@series.id}/comments"} Comentarios
     #myTabContent{:class=>"tab-content"}
       #episodios{:class=>"tab-pane fade in active"}
         .show-info
