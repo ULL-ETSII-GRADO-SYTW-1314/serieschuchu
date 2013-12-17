@@ -1,0 +1,40 @@
+- @series = Series.find(params[:series_id])
+.show
+  .show-col-1
+    %img{:src=>"#{@series.enlace_imagen}"}
+    %br
+    - @follow_show = FollowShow.where(user_id: current_user.id, series_id: @series.id)
+    %form{:class=>"seguimiento-form",:method=>"post",:action=>"/series/#{@series.id}/follow_shows",:id=>"new_follow_show"}
+      = hidden_field_tag(request_forgery_protection_token.to_s, form_authenticity_token)
+      %input{:type=>"hidden",:name=>"url_volver",:value=>request.fullpath}
+      %input{:type=>"hidden",:name=>"follow_show[user_id]",:value=>current_user.id}
+      %input{:type=>"hidden",:name=>"follow_show[series_id]",:value=>@series.id}
+      - if @follow_show.count == 0
+        %input{:type=>"submit",:class=>"btn top-20 btn-danger",:value=>"Seguir esta serie"}
+      - else
+        %input{:type=>"submit",:class=>"btn top-20 btn-success",:value=>"Dejar de seguir"}
+  .show-col-2
+    .show-titulo
+      = @series.nombre
+    .show-menu
+    %ul{:class=>"nav nav-tabs",:id=>"myTab"}
+      %li
+        %a{:href=>"/series/#{@series.id}"} Información
+      %li
+        %a{:href=>"/series/#{@series.id}/episodes"} Episodios
+      %li{:class=>"active"}
+        %a{:href=>"#comentarios","data-toggle"=>"tab"} Comentarios
+    #myTabContent{:class=>"tab-content"}
+      #episodios{:class=>"tab-pane fade in active"}
+        .show-info
+          .show-sinopsis
+            .media Agregar comentario
+            %p
+              = form_for([@series, @series.comments.build]) do |f| 
+                = f.text_area :content
+                #enviar.actions.top-20
+                = f.submit "Enviar"
+
+          .media Comentarios de #{@series.nombre}
+          .show-info-tabla
+            %table.tabla-comentarios.table
