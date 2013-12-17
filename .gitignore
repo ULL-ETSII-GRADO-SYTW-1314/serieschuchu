@@ -11,7 +11,6 @@ tmp/*
 
 # Ignorar la base de datos por defecto SQLITE
 db/*.sqlite3-journal
-db/development.sqlite3
 
 # Ignorar otros ficheros innecesarios
 database.yml
