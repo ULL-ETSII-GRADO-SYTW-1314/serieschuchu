@@ -34,11 +34,11 @@
           .media Lista de enlaces
           .show-info-tabla
             %table.tabla-episodios.table
+              %tr
+                %th Idioma
+                %th Subtitulos
+                %th Enlace
               -@episode.links.each do |elLink|
-                %tr
-                  %th Idioma
-                  %th Subtitulos
-                  %th Enlace
                 %tr
                   %td
                     = elLink.idioma
