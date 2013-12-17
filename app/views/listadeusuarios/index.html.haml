@@ -1,2 +1,11 @@
 %h1 Listado de usuarios
 %p Aquí se muestran todos los usuarios actuales de series chuchu
+
+
+%br
+- @usuarios = User.all
+- @usuarios.each do |usuario|
+  .tipo-usuario
+    - enlaceimagen = avatar_url(usuario)
+    %img{:src=>"#{enlaceimagen}"}
+    %label #{usuario.username}

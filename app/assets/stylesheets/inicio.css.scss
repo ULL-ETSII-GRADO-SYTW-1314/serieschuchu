@@ -164,6 +164,27 @@ body {
 		font-size: 14px;
 	}
 }
+
+.tipo-usuario {
+  float:left;
+	margin-right:20px;
+	width: 124px;
+	img {   
+		max-width: 124px;
+		max-height: 184px;
+		background-color: #eaeaea;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		transition: all 0.1s linear;
+	}
+	label {
+		width: 124px;
+		height: 50px;
+		color: #353535;
+		font-size: 14px;
+	}
+}
 .show {
 	overflow:hidden;
 	margin-top:35px;
