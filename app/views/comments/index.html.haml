@@ -36,9 +36,14 @@
                 = f.submit "Enviar"
 
           .media Comentarios de #{@series.nombre}
-          .show-info-tabla
-            %table.tabla-comentarios.table
-              - @series.comments.each do |comment|
-                %tr
-                  %td= (User.find(current_user.id)).username
-                  %td= comment.content
+          
+          - if !@series.comments.count.zero?
+            .show-info-tabla
+              %table.tabla-comentarios.table
+                - @series.comments.each do |comment|
+                  - if comment.content
+                    %tr
+                      %td= (User.find(current_user.id)).username
+                      %td= comment.content
+          - else
+            %p Nadie ha comentado aún. Sé el primero en hacerlo!
