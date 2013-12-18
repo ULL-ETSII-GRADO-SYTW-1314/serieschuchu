@@ -24464,3 +24464,2513 @@ ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halfli
   Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.3ms)
   Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
   Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (114.2ms)
+
+
+Started GET "/perfiles/3" for 127.0.0.1 at 2013-12-18 18:34:16 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PerfilesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "follow_shows" WHERE "follow_shows"."user_id" = 3[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "follow_users" WHERE "follow_users"."user_id" = 4 AND "follow_users"."amigo_id" = 3[0m
+  [1m[35mFollowShow Load (0.1ms)[0m  SELECT "follow_shows".* FROM "follow_shows" WHERE "follow_shows"."user_id" = 3
+  [1m[36mSeries Load (0.3ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = 2[0m
+  Rendered perfiles/show.html.haml within layouts/inicio (91.1ms)
+Completed 200 OK in 256ms (Views: 248.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/follow_shows.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/follow_user.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/link.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/listadeusuarios.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/misseries.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/perfiles.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/series.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.9ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (82.2ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 127.0.0.1 at 2013-12-18 18:34:17 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.6ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (77.3ms)
+
+
+Started GET "/listadeusuarios" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+Processing by ListadeusuariosController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /home/waldo/SYTW/serieschuchu/app/controllers/listadeusuarios_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/waldo/SYTW/serieschuchu/app/controllers/listadeusuarios_controller.rb:8)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered listadeusuarios/index.html.haml within layouts/inicio (6.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/follow_shows.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/follow_user.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/listadeusuarios.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/link.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/misseries.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/perfiles.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/series.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.2ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (74.1ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 127.0.0.1 at 2013-12-18 18:34:21 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.1ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (74.5ms)
+
+
+Started GET "/perfiles/3" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+Processing by PerfilesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "follow_shows" WHERE "follow_shows"."user_id" = 3[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "follow_users" WHERE "follow_users"."user_id" = 4 AND "follow_users"."amigo_id" = 3[0m
+  [1m[35mFollowShow Load (0.1ms)[0m  SELECT "follow_shows".* FROM "follow_shows" WHERE "follow_shows"."user_id" = 3
+  [1m[36mSeries Load (0.2ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = 2[0m
+  Rendered perfiles/show.html.haml within layouts/inicio (6.1ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/follow_shows.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/follow_user.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/link.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/listadeusuarios.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/misseries.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/series.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/perfiles.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (73.3ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 127.0.0.1 at 2013-12-18 18:34:23 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (73.7ms)
+
+
+Started POST "/perfiles/3/follow_user" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+Processing by FollowUserController#create as HTML
+  Parameters: {"authenticity_token"=>"znhju06/dcE7W7VGbmKTJFrcLM0smNNZaShNQDiiLJE=", "url_volver"=>"/perfiles/3", "follow_user"=>{"user_id"=>"4", "amigo_id"=>"3"}, "perfile_id"=>"3"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "follow_users" WHERE "follow_users"."user_id" = 4 AND "follow_users"."amigo_id" = 3
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.2ms)[0m  INSERT INTO "follow_users" ("amigo_id", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["amigo_id", 3], ["created_at", Wed, 18 Dec 2013 18:34:25 UTC +00:00], ["updated_at", Wed, 18 Dec 2013 18:34:25 UTC +00:00], ["user_id", 4]]
+  [1m[36m (148.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/perfiles/3
+Completed 302 Found in 165ms (ActiveRecord: 152.5ms)
+
+
+Started GET "/perfiles/3" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+Processing by PerfilesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "follow_shows" WHERE "follow_shows"."user_id" = 3[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "follow_users" WHERE "follow_users"."user_id" = 4 AND "follow_users"."amigo_id" = 3[0m
+  [1m[35mFollowShow Load (0.1ms)[0m  SELECT "follow_shows".* FROM "follow_shows" WHERE "follow_shows"."user_id" = 3
+  [1m[36mSeries Load (0.2ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = 2[0m
+  Rendered perfiles/show.html.haml within layouts/inicio (7.1ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/follow_shows.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/follow_user.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/link.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/perfiles.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/listadeusuarios.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/misseries.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/series.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.3ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (73.4ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 127.0.0.1 at 2013-12-18 18:34:25 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.9ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (79.4ms)
+
+
+Started GET "/listadeusuarios" for 127.0.0.1 at 2013-12-18 18:34:28 +0000
+Processing by ListadeusuariosController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /home/waldo/SYTW/serieschuchu/app/controllers/listadeusuarios_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/waldo/SYTW/serieschuchu/app/controllers/listadeusuarios_controller.rb:8)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered listadeusuarios/index.html.haml within layouts/inicio (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:28 +0000
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:28 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:28 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:28 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:28 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:28 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:28 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:28 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:28 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:28 +0000
+
+
+Started GET "/assets/follow_shows.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:28 +0000
+
+
+Started GET "/assets/link.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:28 +0000
+
+
+Started GET "/assets/follow_user.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:28 +0000
+
+
+Started GET "/assets/listadeusuarios.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:28 +0000
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:28 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:28 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:28 +0000
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:28 +0000
+
+
+Started GET "/assets/misseries.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:29 +0000
+
+
+Started GET "/assets/perfiles.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:29 +0000
+
+
+Started GET "/assets/series.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:29 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:29 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:29 +0000
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-12-18 18:34:29 +0000
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2013-12-18 18:34:29 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (75.1ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 127.0.0.1 at 2013-12-18 18:34:29 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.2ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (74.2ms)
+
+
+Started GET "/perfiles/3" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+Processing by PerfilesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "follow_shows" WHERE "follow_shows"."user_id" = 3[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "follow_users" WHERE "follow_users"."user_id" = 4 AND "follow_users"."amigo_id" = 3[0m
+  [1m[35mFollowShow Load (0.2ms)[0m  SELECT "follow_shows".* FROM "follow_shows" WHERE "follow_shows"."user_id" = 3
+  [1m[36mSeries Load (0.2ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = 2[0m
+  Rendered perfiles/show.html.haml within layouts/inicio (7.4ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/follow_shows.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/follow_user.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/link.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/misseries.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/listadeusuarios.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/perfiles.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/series.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.1ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (72.9ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 127.0.0.1 at 2013-12-18 18:34:31 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.8ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (74.6ms)
+
+
+Started POST "/perfiles/3/follow_user" for 127.0.0.1 at 2013-12-18 18:34:33 +0000
+Processing by FollowUserController#create as HTML
+  Parameters: {"authenticity_token"=>"znhju06/dcE7W7VGbmKTJFrcLM0smNNZaShNQDiiLJE=", "url_volver"=>"/perfiles/3", "follow_user"=>{"user_id"=>"4", "amigo_id"=>"3"}, "perfile_id"=>"3"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "follow_users" WHERE "follow_users"."user_id" = 4 AND "follow_users"."amigo_id" = 3
+  [1m[36mFollowUser Load (0.2ms)[0m  [1mSELECT "follow_users".* FROM "follow_users" WHERE "follow_users"."user_id" = 4 AND "follow_users"."amigo_id" = 3 ORDER BY "follow_users"."id" ASC LIMIT 1[0m
+  [1m[35mFollowUser Load (0.3ms)[0m  SELECT "follow_users".* FROM "follow_users" WHERE "follow_users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "follow_users" WHERE "follow_users"."id" = ?  [["id", 1]]
+  [1m[36m (141.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/perfiles/3
+Completed 302 Found in 150ms (ActiveRecord: 142.3ms)
+
+
+Started GET "/perfiles/3" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+Processing by PerfilesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "follow_shows" WHERE "follow_shows"."user_id" = 3[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "follow_users" WHERE "follow_users"."user_id" = 4 AND "follow_users"."amigo_id" = 3[0m
+  [1m[35mFollowShow Load (0.2ms)[0m  SELECT "follow_shows".* FROM "follow_shows" WHERE "follow_shows"."user_id" = 3
+  [1m[36mSeries Load (0.2ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = 2[0m
+  Rendered perfiles/show.html.haml within layouts/inicio (6.9ms)
+Completed 200 OK in 63ms (Views: 61.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/follow_shows.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/follow_user.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/listadeusuarios.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/misseries.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/link.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/perfiles.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/series.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.1ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (74.0ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 127.0.0.1 at 2013-12-18 18:34:34 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (113.2ms)
+
+
+Started GET "/listadeusuarios" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+Processing by ListadeusuariosController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /home/waldo/SYTW/serieschuchu/app/controllers/listadeusuarios_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/waldo/SYTW/serieschuchu/app/controllers/listadeusuarios_controller.rb:8)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered listadeusuarios/index.html.haml within layouts/inicio (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/follow_shows.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/follow_user.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/link.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/listadeusuarios.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/misseries.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/perfiles.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/series.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.1ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (39.8ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (111.8ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 127.0.0.1 at 2013-12-18 18:34:37 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (77.7ms)
+
+
+Started GET "/perfiles/1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+Processing by PerfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "follow_shows" WHERE "follow_shows"."user_id" = 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "follow_users" WHERE "follow_users"."user_id" = 4 AND "follow_users"."amigo_id" = 1[0m
+  [1m[35mFollowShow Load (0.2ms)[0m  SELECT "follow_shows".* FROM "follow_shows" WHERE "follow_shows"."user_id" = 1
+  [1m[36mSeries Load (0.2ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = 1[0m
+  [1m[35mSeries Load (0.2ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = 3
+  [1m[36mSeries Load (0.2ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = 5[0m
+  [1m[35mSeries Load (0.2ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = 7
+  [1m[36mSeries Load (0.2ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = 4[0m
+  [1m[35mSeries Load (0.2ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = 2
+  [1m[36mSeries Load (0.2ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = 8[0m
+  [1m[35mSeries Load (0.2ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = 10
+  Rendered perfiles/show.html.haml within layouts/inicio (11.3ms)
+Completed 200 OK in 26ms (Views: 23.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/follow_shows.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/follow_user.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/misseries.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/link.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/listadeusuarios.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/perfiles.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/series.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:40 +0000
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-12-18 18:34:41 +0000
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2013-12-18 18:34:41 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.2ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (74.4ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 127.0.0.1 at 2013-12-18 18:34:41 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.7ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (75.9ms)
+
+
+Started POST "/perfiles/1/follow_user" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+Processing by FollowUserController#create as HTML
+  Parameters: {"authenticity_token"=>"znhju06/dcE7W7VGbmKTJFrcLM0smNNZaShNQDiiLJE=", "url_volver"=>"/perfiles/1", "follow_user"=>{"user_id"=>"4", "amigo_id"=>"1"}, "perfile_id"=>"1"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "follow_users" WHERE "follow_users"."user_id" = 4 AND "follow_users"."amigo_id" = 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "follow_users" ("amigo_id", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["amigo_id", 1], ["created_at", Wed, 18 Dec 2013 18:34:43 UTC +00:00], ["updated_at", Wed, 18 Dec 2013 18:34:43 UTC +00:00], ["user_id", 4]]
+  [1m[35m (196.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/perfiles/1
+Completed 302 Found in 201ms (ActiveRecord: 196.9ms)
+
+
+Started GET "/perfiles/1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+Processing by PerfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "follow_shows" WHERE "follow_shows"."user_id" = 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "follow_users" WHERE "follow_users"."user_id" = 4 AND "follow_users"."amigo_id" = 1
+  [1m[36mFollowShow Load (0.2ms)[0m  [1mSELECT "follow_shows".* FROM "follow_shows" WHERE "follow_shows"."user_id" = 1[0m
+  [1m[35mSeries Load (0.2ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = 1
+  [1m[36mSeries Load (0.2ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = 3[0m
+  [1m[35mSeries Load (0.2ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = 5
+  [1m[36mSeries Load (0.2ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = 7[0m
+  [1m[35mSeries Load (0.2ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = 4
+  [1m[36mSeries Load (0.2ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = 2[0m
+  [1m[35mSeries Load (0.2ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = 8
+  [1m[36mSeries Load (0.2ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = 10[0m
+  Rendered perfiles/show.html.haml within layouts/inicio (12.6ms)
+Completed 200 OK in 27ms (Views: 23.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/follow_shows.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/follow_user.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/link.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/listadeusuarios.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/misseries.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/perfiles.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/series.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (74.3ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 127.0.0.1 at 2013-12-18 18:34:43 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.9ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (74.7ms)
+
+
+Started GET "/listadeusuarios" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+Processing by ListadeusuariosController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /home/waldo/SYTW/serieschuchu/app/controllers/listadeusuarios_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/waldo/SYTW/serieschuchu/app/controllers/listadeusuarios_controller.rb:8)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered listadeusuarios/index.html.haml within layouts/inicio (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 61ms (Views: 58.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/follow_shows.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/follow_user.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/link.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/misseries.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/perfiles.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/listadeusuarios.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/series.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.1ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (74.5ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 127.0.0.1 at 2013-12-18 18:34:46 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.6ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (121.1ms)
+
+
+Started GET "/perfiles/2" for 127.0.0.1 at 2013-12-18 18:34:47 +0000
+Processing by PerfilesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "follow_shows" WHERE "follow_shows"."user_id" = 2[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "follow_users" WHERE "follow_users"."user_id" = 4 AND "follow_users"."amigo_id" = 2[0m
+  [1m[35mFollowShow Load (0.1ms)[0m  SELECT "follow_shows".* FROM "follow_shows" WHERE "follow_shows"."user_id" = 2
+  [1m[36mSeries Load (0.2ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = 2[0m
+  Rendered perfiles/show.html.haml within layouts/inicio (6.5ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:47 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:47 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:47 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:47 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:48 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:48 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:48 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:48 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:48 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:48 +0000
+
+
+Started GET "/assets/follow_shows.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:48 +0000
+
+
+Started GET "/assets/follow_user.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:48 +0000
+
+
+Started GET "/assets/listadeusuarios.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:48 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:48 +0000
+
+
+Started GET "/assets/link.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:48 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:48 +0000
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:48 +0000
+
+
+Started GET "/assets/misseries.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:48 +0000
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:48 +0000
+
+
+Started GET "/assets/series.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:48 +0000
+
+
+Started GET "/assets/perfiles.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:48 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:48 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:48 +0000
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-12-18 18:34:48 +0000
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2013-12-18 18:34:48 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (38.7ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (114.3ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 127.0.0.1 at 2013-12-18 18:34:48 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.0ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (75.3ms)
+
+
+Started POST "/perfiles/2/follow_user" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+Processing by FollowUserController#create as HTML
+  Parameters: {"authenticity_token"=>"znhju06/dcE7W7VGbmKTJFrcLM0smNNZaShNQDiiLJE=", "url_volver"=>"/perfiles/2", "follow_user"=>{"user_id"=>"4", "amigo_id"=>"2"}, "perfile_id"=>"2"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "follow_users" WHERE "follow_users"."user_id" = 4 AND "follow_users"."amigo_id" = 2
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "follow_users" ("amigo_id", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["amigo_id", 2], ["created_at", Wed, 18 Dec 2013 18:34:49 UTC +00:00], ["updated_at", Wed, 18 Dec 2013 18:34:49 UTC +00:00], ["user_id", 4]]
+  [1m[36m (141.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/perfiles/2
+Completed 302 Found in 148ms (ActiveRecord: 142.2ms)
+
+
+Started GET "/perfiles/2" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+Processing by PerfilesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "follow_shows" WHERE "follow_shows"."user_id" = 2[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "follow_users" WHERE "follow_users"."user_id" = 4 AND "follow_users"."amigo_id" = 2[0m
+  [1m[35mFollowShow Load (0.1ms)[0m  SELECT "follow_shows".* FROM "follow_shows" WHERE "follow_shows"."user_id" = 2
+  [1m[36mSeries Load (0.2ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = 2[0m
+  Rendered perfiles/show.html.haml within layouts/inicio (6.8ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/follow_shows.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/follow_user.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/link.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/listadeusuarios.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/misseries.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/series.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/perfiles.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (77.7ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 127.0.0.1 at 2013-12-18 18:34:49 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (76.2ms)
+
+
+Started POST "/perfiles/2/follow_user" for 127.0.0.1 at 2013-12-18 18:34:51 +0000
+Processing by FollowUserController#create as HTML
+  Parameters: {"authenticity_token"=>"znhju06/dcE7W7VGbmKTJFrcLM0smNNZaShNQDiiLJE=", "url_volver"=>"/perfiles/2", "follow_user"=>{"user_id"=>"4", "amigo_id"=>"2"}, "perfile_id"=>"2"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "follow_users" WHERE "follow_users"."user_id" = 4 AND "follow_users"."amigo_id" = 2
+  [1m[36mFollowUser Load (0.4ms)[0m  [1mSELECT "follow_users".* FROM "follow_users" WHERE "follow_users"."user_id" = 4 AND "follow_users"."amigo_id" = 2 ORDER BY "follow_users"."id" ASC LIMIT 1[0m
+  [1m[35mFollowUser Load (0.1ms)[0m  SELECT "follow_users".* FROM "follow_users" WHERE "follow_users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "follow_users" WHERE "follow_users"."id" = ?  [["id", 3]]
+  [1m[36m (139.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/perfiles/2
+Completed 302 Found in 145ms (ActiveRecord: 140.4ms)
+
+
+Started GET "/perfiles/2" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+Processing by PerfilesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "follow_shows" WHERE "follow_shows"."user_id" = 2[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "follow_users" WHERE "follow_users"."user_id" = 4 AND "follow_users"."amigo_id" = 2[0m
+  [1m[35mFollowShow Load (0.3ms)[0m  SELECT "follow_shows".* FROM "follow_shows" WHERE "follow_shows"."user_id" = 2
+  [1m[36mSeries Load (0.2ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = 2[0m
+  Rendered perfiles/show.html.haml within layouts/inicio (6.5ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/follow_shows.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/follow_user.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/link.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/perfiles.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/listadeusuarios.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/series.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/misseries.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.3ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (74.3ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 127.0.0.1 at 2013-12-18 18:34:52 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (74.1ms)
+
+
+Started GET "/listadeusuarios" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+Processing by ListadeusuariosController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /home/waldo/SYTW/serieschuchu/app/controllers/listadeusuarios_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/waldo/SYTW/serieschuchu/app/controllers/listadeusuarios_controller.rb:8)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered listadeusuarios/index.html.haml within layouts/inicio (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 59ms (Views: 57.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/follow_shows.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/follow_user.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/link.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/listadeusuarios.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/misseries.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/perfiles.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/series.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (73.8ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 127.0.0.1 at 2013-12-18 18:34:53 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (74.2ms)
+
+
+Started GET "/perfiles/4" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+Processing by PerfilesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "follow_shows" WHERE "follow_shows"."user_id" = 4[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mFollowShow Load (0.2ms)[0m  [1mSELECT "follow_shows".* FROM "follow_shows" WHERE "follow_shows"."user_id" = 4[0m
+  [1m[35mSeries Load (0.2ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = 10
+  [1m[36mSeries Load (0.2ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = 6[0m
+  [1m[35mSeries Load (0.2ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = 13
+  [1m[36mSeries Load (0.2ms)[0m  [1mSELECT "series".* FROM "series" WHERE "series"."id" = 4[0m
+  [1m[35mSeries Load (0.2ms)[0m  SELECT "series".* FROM "series" WHERE "series"."id" = 3
+  Rendered perfiles/show.html.haml within layouts/inicio (7.9ms)
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/episodes.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/follow_user.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/follow_shows.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/jquery-1.10.2.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/link.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/listadeusuarios.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/misseries.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/series.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/perfiles.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/assets/logo_principal.png" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.9ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (75.4ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 127.0.0.1 at 2013-12-18 18:34:55 +0000
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/waldo/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.7ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (77.9ms)

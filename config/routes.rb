@@ -78,4 +78,9 @@ Serieschuchu::Application.routes.draw do
         resources :links
      end
   end
+  
+  resources :perfiles do
+    resources :follow_user
+  end
+  
 end
