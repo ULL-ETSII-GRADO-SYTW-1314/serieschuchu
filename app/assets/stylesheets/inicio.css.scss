@@ -280,3 +280,41 @@ body {
 		width:100%;
 	}
 }
+.clear{
+  clear:both;
+  padding: 2.5px;
+}
+.show-comments{
+  margin-top: 15px;
+  @extend .mini;
+}
+.usercomment{
+  border: solid 1px #ddd;
+  overflow: hidden;
+  border-radius: 10px;
+  img {
+    height: 50px;
+    width: 50px;
+    float: left;
+    border-radius: 10px;
+  }
+}
+#comment_content {
+  border-radius: 10px;
+  height: 50px;
+  border-color: #ddd;
+  width: 610px;
+}
+
+.usercomment{
+  b {
+    color: $azul_series;
+    }
+  margin: 5px;
+  padding: 5px;
+}
+
+.comment{
+  margin: 5px;
+  padding-left: 55px;
+}
