@@ -1,2 +1,12 @@
-%h1 Amigos#index
-%p Find me in app/views/amigos/index.html.haml
+%h1 Amigos
+%p Aquí encontrarás a todos tus amigos
+%br
+- @amigos = FollowUser.where(user_id: current_user.id)
+- @amigos.each do |amigo|
+  - us = User.where(id: amigo.amigo_id)
+  - us.each do |user|
+    .tipo-usuario
+      %a{:href=>"/perfiles/#{user.id}"}
+        - enlaceimagen = avatar_url(user)
+        %img{:src=>"#{enlaceimagen}"}
+        %label #{user.username}

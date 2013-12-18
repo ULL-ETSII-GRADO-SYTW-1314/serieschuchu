@@ -1,5 +1,5 @@
 Serieschuchu::Application.routes.draw do
-  get "amigos/index"
+  #get "amigos/index"
   #get "perfiles/index"
   #get "listadeusuarios/index"
   #get "misseries/index"
@@ -10,6 +10,7 @@ Serieschuchu::Application.routes.draw do
   resources :misseries
   resources :listadeusuarios
   resources :perfiles
+  resources :amigos
   match "/search" => "search#search", :as => :search, :via => :get
   get "inicio/portada"
   get "inicio/index"
