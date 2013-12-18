@@ -1,0 +1,19 @@
+%form(action="/series/search" method="get")
+  %input(type="text" name="search" id="search" value="#{params[:search]}")
+  %button(type="submit" class="btn btn-primary")
+    %span(class="glyphicon glyphicon-search")
+
+%h1 Búsqueda de series
+- if @series.any?
+  - if @series.count != 1
+    %p Se han encontrado <strong>#{@series.count}</strong> resultados.
+  - else
+    %p Se ha encontrado <strong>1</strong> resultado.
+   
+  - @series.each do |series|
+    %a{:href=>"series/#{series.id}"}
+      .tipo-serie-catalogo
+        %img{:src=>series.enlace_imagen}
+        %label #{series.nombre}
+- else
+  %p No se ha encontrado ningún resultado
