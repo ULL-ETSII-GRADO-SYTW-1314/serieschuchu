@@ -27,6 +27,7 @@
   %br
   - @users.each do |user|
     .tipo-usuario
-      - enlaceimagen = avatar_url(user)
-      %img{:src=>"#{enlaceimagen}"}
-      %label #{user.username}
+      %a{:href=>"/perfiles/#{user.id}"}
+        - enlaceimagen = avatar_url(user)
+        %img{:src=>"#{enlaceimagen}"}
+        %label #{user.username}
