@@ -1,7 +1,8 @@
-%form(action="/series/search" method="get")
-  %input(type="text" name="search" id="search" value="#{params[:search]}")
-  %button(type="submit" class="btn btn-primary")
-    %span(class="glyphicon glyphicon-search")
+.buscador-body
+  %form(action="/search" method="get")
+    %input(type="text" name="search" id="search" value="#{params[:search]}")
+    %button(type="submit")
+      %span(class="glyphicon glyphicon-search")
 
 %h1 Búsqueda de series
 - if @series.any?
