@@ -1,11 +1,32 @@
-%h1 Listado de usuarios
-%p Aquí se muestran todos los usuarios actuales de series chuchu
+.buscador-body
+  %form(action="/listadeusuarios" method="get")
+    %input(type="text" name="search" id="search" value="#{params[:search]}")
+    %button(type="submit")
+      %span(class="glyphicon glyphicon-search")
 
+- if params[:search]
+  %h1 Búsqueda de usuarios
+  - if @users.any?
+    - if @users.count != 1
+      %p Se han encontrado <strong>#{@users.count}</strong> resultado.
+    - else
+      %p Se ha encontrado <strong>1</strong> resultado.
+    - @users.each do |user|
+      .tipo-usuario
+        - enlaceimagen = avatar_url(user)
+        %img{:src=>"#{enlaceimagen}"}
+        %label #{user.username}
+  - else
+    %p No se ha encontrado ningún resultado
+  %br
+  %a(href="/listadeusuarios" class="btn btn-primary btn-lg" role="button") Volver
 
-%br
-- @usuarios = User.all
-- @usuarios.each do |usuario|
-  .tipo-usuario
-    - enlaceimagen = avatar_url(usuario)
-    %img{:src=>"#{enlaceimagen}"}
-    %label #{usuario.username}
+- else
+  %h1 Listado de usuarios
+  %p Aquí se muestran todos los usuarios actuales de series chuchu
+  %br
+  - @users.each do |user|
+    .tipo-usuario
+      - enlaceimagen = avatar_url(user)
+      %img{:src=>"#{enlaceimagen}"}
+      %label #{user.username}
