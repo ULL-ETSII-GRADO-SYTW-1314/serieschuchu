@@ -45,7 +45,10 @@
 			</div>
 		</div>
 		<div class="buscador-top">
-			<input type="text" placeholder="Buscar" name="buscar"/>
+      <form action="/series/search" method="get">
+        <input type="text" name="search" id="search" placeholder="Busca tu serie favorita" /> <span class="glyphicon glyphicon-search"></span>
+        <input class="hidden" type="submit" value="Buscar" />
+      </form>
 		</div>
 	</div>
 </div>
