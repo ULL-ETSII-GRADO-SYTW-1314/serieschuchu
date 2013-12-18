@@ -14,7 +14,7 @@
     - @follow_show.each do |serie_actual|
       - actual = Series.where(id: serie_actual.series_id)
       - actual.each do |miserie|
-        %a{:href=>"series/#{miserie.id}"}
+        %a{:href=>"../series/#{miserie.id}"}
           .tipo-serie-catalogo
             %img{:src=>miserie.enlace_imagen}
             %label #{miserie.nombre}
