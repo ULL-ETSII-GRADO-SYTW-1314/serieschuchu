@@ -1,4 +1,5 @@
 Serieschuchu::Application.routes.draw do
+  get "amigos/index"
   #get "perfiles/index"
   #get "listadeusuarios/index"
   #get "misseries/index"
