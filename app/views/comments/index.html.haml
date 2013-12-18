@@ -32,7 +32,7 @@
               Agregar comentario
               %p
                 = form_for([@series, @series.comments.build]) do |f| 
-                  = f.text_area :content
+                  = f.text_area :content, :placeholder => "Escribe un comentario..."
                   #enviar.actions.top-20
                   = f.submit "Enviar"
 
