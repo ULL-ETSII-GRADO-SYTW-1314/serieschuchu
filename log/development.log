@@ -24151,3 +24151,10 @@ ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halfli
   Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.0ms)
   Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
   Rendered /home/waldo/.rvm/gems/ruby-2.0.0-p247@serieschuchu/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (66.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateFollowUsers (20131218182434)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "follow_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "amigo_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131218182434"]]
+  [1m[36m (146.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
