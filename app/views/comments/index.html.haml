@@ -32,19 +32,22 @@
               Agregar comentario
               %p
                 = form_for([@series, @series.comments.build]) do |f| 
-                  = f.text_area :content, :rows => 3, :cols => 50
+                  = f.text_area :content
                   #enviar.actions.top-20
                   = f.submit "Enviar"
 
           .media Comentarios de #{@series.nombre}
           
           - if !@series.comments.count.zero?
-            .show-info-tabla
-              %table.tabla-comentarios.table
-                - @series.comments.each do |comment|
-                  - if comment.content
-                    %tr
-                      %td= (User.find(current_user.id)).username
-                      %td= comment.content
+            .show-comments
+              - @series.comments.each do |comment|
+                - if comment.content
+                  .usercomment
+                    = image_tag avatar_url(current_user)
+                    .comment
+                      <b>#{(User.find(current_user.id)).username}</b> comentó:
+                      %br
+                      = comment.content
+                  .clear
           - else
             %p Nadie ha comentado aún. Sé el primero en hacerlo!
