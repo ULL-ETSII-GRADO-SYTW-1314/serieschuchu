@@ -8,13 +8,26 @@
       %h2 #{u.username}
       - @follow_show = FollowShow.where(user_id: params["id"]) 
       %p
-        Este usuario sigue un total de #{@follow_show.count} series 
+        Este usuario sigue un total de #{@follow_show.count} series
+        - if params["id"].to_s != current_user.id.to_s
+          %br
+          - @follow_user = FollowUser.where(user_id: current_user.id, amigo_id: params["id"])
+          %form{:class=>"seguimiento-form",:method=>"post",:action=>"/perfiles/#{params["id"]}/follow_user",:id=>"new_follow_user"}
+            = hidden_field_tag(request_forgery_protection_token.to_s, form_authenticity_token)
+            %input{:type=>"hidden",:name=>"url_volver",:value=>request.fullpath}
+            %input{:type=>"hidden",:name=>"follow_user[user_id]",:value=>current_user.id}
+            %input{:type=>"hidden",:name=>"follow_user[amigo_id]",:value=>params["id"]}
+            - if @follow_user.count == 0
+              %input{:type=>"submit",:class=>"btn top-20 btn-danger",:value=>"Seguir a este usuario"}
+            - else
+              %input{:type=>"submit",:class=>"btn top-20 btn-success",:value=>"Dejar de seguir"}
+
   .interior-1000
     %h2.no-top Series que sigue #{u.username}
     - @follow_show.each do |serie_actual|
       - actual = Series.where(id: serie_actual.series_id)
       - actual.each do |miserie|
-        %a{:href=>"../series/#{miserie.id}"}
+        %a{:href=>"series/#{miserie.id}"}
           .tipo-serie-catalogo
             %img{:src=>miserie.enlace_imagen}
             %label #{miserie.nombre}
