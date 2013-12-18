@@ -317,3 +317,37 @@ body {
 .glyphicon span {
   height: 30px;
 }
+
+.perfil-principal {
+  min-height:151px;
+  padding-top:10px;
+  width:1000px;
+  margin-top:20px;
+  background-color:rgba(0,0,255,0.03);
+  margin-bottom:20px;
+}
+.perfil-imagen {
+
+  width:152px;
+  img {
+    height:130px;
+    width:130px;
+	-webkit-border-radius: 360px;
+	-moz-border-radius: 360px;
+	border-radius: 360px;
+  }
+  float:left;
+}
+.perfil-info {
+  float:left;
+  margin-left:20px;
+  h2 {
+    margin-top:0px;
+  }
+}
+
+.no-top {
+  margin-top:0px;
+  margin-bottom:20px;
+}
+.interior-1000 { width:1030px;}
