@@ -318,3 +318,9 @@ body {
   margin: 5px;
   padding-left: 55px;
 }
+.delete-comment{
+  float:right;
+  a {
+    color: $azul_series;
+  }
+}
