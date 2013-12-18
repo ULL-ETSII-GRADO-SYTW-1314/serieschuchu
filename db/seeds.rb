@@ -66,6 +66,66 @@ arrow = Series.new(   nombre: "Arrow",
                       generos: "Acción, Aventura, Drama")
 arrow.save
 
+thebigbangtheory = Series.new(nombre: "The Big Bang Theory",
+                      informacion: "Serie iniciada en 2007, 21 min. por capítulo, EEUU",
+                      sinopsis: 'Leonard Hofstadter y Sheldon Cooper son dos físicos brillantes que trabajan en Cal Tech en Pasadena, California. Son colegas, mejores amigos y compañeros de piso. También están el ingeniero mecánico Howard Wolowitz y el astrofísico Rajesh Koothrappali, colegas y amigos de Cal Tech. El cuarteto gasta la mayor parte del tiempo trabajando en sus proyectos individuales, jugando videojuegos, viendo series y películas de ciencia ficción o leyendo comics. Cuando Penny, una preciosa mujer y aspirante a actriz se traslada al apartamento de enfrente, Leonard tiene otra aspiración en la vida, conseguir que Penny sea su novia.',
+                      puntuacion: 9.2,
+                      votos: 1,
+                      imagen: true,
+                      enlace_imagen: "http://cdn.opensly.com/series/2V675K5Y2R.jpg",
+                      directores: "Mark Cendrowski, Peter Chakos, Anthony Joseph Rich, James Burrows, Howard Murray",
+                      titulo_original: "The Big Bang Theory",
+                      generos: "Comedia")
+thebigbangtheory.save
+
+comoconociavuestramadre = Series.new(nombre: "Cómo conocí a vuestra madre",
+                      informacion: "Serie iniciada en 2005, 25 min. por capítulo, EEUU",
+                      sinopsis: 'How I Met Your Mother. Exitosa serie de la CBS que, en su primera temporada, obtuvo excelentes índices de audiencia además de ganar dos premios Emmy: uno a la dirección artística y otro a la fotografía. En el año 2030, Ted (Josh Radnor) relata a sus dos hijos adolescentes cómo conoció a su madre y cómo fue su vida hasta que, por fin, encontró el amor verdadero. Todo empezó cuando Marshall (Jason Segel), su mejor amigo, decidió casarse con Lily (Alyson Hannigan), su novia de toda la vida. Entonces Ted decidió lanzarse a la búsqueda del amor verdadero y formar una familia. Para conseguirlo contó con el apoyo de su amigo Barney (Neil Patrick Harris), un joven algo extravagante, adicto a los somníferos y muy hábil para conocer mujeres. Cuando, por fin, Ted conoce a Robin (Cobie Smulders), una impresionante joven canadiense que acaba de mudarse a Nueva York, está completamente seguro de que es amor a primera vista, pero el destino aún puede depararle muchas sorpresas.',
+                      puntuacion: 9.1,
+                      votos: 1,
+                      imagen: true,
+                      enlace_imagen: "http://cdn.opensly.com/series/5HHY9YEFN7.jpg",
+                      directores: "Pamela Fryman, Rob Greenberg, Michael J. Shea",
+                      titulo_original: "How I Met Your Mother",
+                      generos: "Comedia, Romance")
+comoconociavuestramadre.save
+
+thewalkingdead = Series.new(nombre: "The Walking Dead",
+                      informacion: "Serie iniciada en 2010, 45 min. por capítulo, EEUU",
+                      sinopsis: 'The Walking Dead nos cuenta como Rick Grimes, un común policía de pueblo Norteamericano oriundo de Kentucky, después de un incidente acaecido en cumplimiento del deber, despierta de su estado de coma para encontrarse con que el mundo ha sido arrasado y que en lugar de personas hay una increíble cantidad de cadáveres rondando por todas partes y deseosos de carne fresca.Ante este desolado panorama, Rick emprende la búsqueda de su familia. Con el paso del tiempo se muestra un Rick mas curtido y falto de sensibilerias que se unirá a un grupo de personas (al parecer únicos supervivientes de este Apocalipsis moderno) en busca de un lugar donde establecerse y estar seguros o al menos poder hacer frente a la amenaza zombie que les acecha.Aunque en principio la causa de la aparición de los zombies no se revela (parece ser un experimento militar genético) estos pasan en números posteriores a jugar un papel secundario, dando lugar al desarrollo humano y personal de los personajes y a las diferentes formas de enfrentarse ante este panorama de persecución, muerte y destrucción que han provocado los zombies.',
+                      puntuacion: 8.8,
+                      votos: 1,
+                      imagen: true,
+                      enlace_imagen: "http://cdn.opensly.com/series/NU7FNW7ERR.jpg",
+                      directores: "Ernest R. Dickerson, Guy Ferland, Bill Gierhart, Gwyneth Horder-Payton, Michelle MacLaren, Gregory Nicotero",
+                      titulo_original: "The Walking Dead",
+                      generos: "Drama, Horror, Novela de Suspense")
+thewalkingdead.save
+
+modernfamily = Series.new(nombre: "Modern Family",
+                      informacion: "Serie iniciada en 2009, 30 min. por capítulo, EEUU",
+                      sinopsis: 'Aclamada serie -es sin duda la sitcom más premiada en los últimos años- que narra el día a día de Jay Pritchett (Ed O’Neill) y su familia, compuesta por su mujer (mucho más joven) Gloria Delgado (Sofia Vergara) y su hijo Manny, y al mismo tiempo muestra la vida de otras dos familias compuestas por su hijo gay Mitchell (Jesse Tyler Ferguson), casado con Eric (Cameron Tucker) y padre adoptivo de una niña, y su hija Claire (Julie Bowen), madre de 3 hijos pequeños.',
+                      puntuacion: 9.1,
+                      votos: 1,
+                      imagen: true,
+                      enlace_imagen: "http://cdn.opensly.com/series/YFWCHNFDAH.jpg",
+                      directores: "Michael Spiller, Jason Winer, Chris Koch, Steven Levitan, Gail Mancuso, Scott Ellis, James R. Bagdonas, Reginald Hudlin, Randall Einhorn, Fred Savage",
+                      titulo_original: "Modern Family",
+                      generos: "Comedia")
+modernfamily.save
+
+newgirl = Series.new(nombre: "New Girl",
+                      informacion: "Serie iniciada en 2012, 30 min. por capítulo, EEUU",
+                      sinopsis: 'Jess - a bubbly offbeat teacher who is known to burst into spontaneous song - catches her boyfriend with another woman, and needs a new place to live. She moves into a loft with three single guys she's never met before. Nick is a jaded law-school dropout, who usually just wants to be left alone. Schmidt is an flashy businessman, who believes he is a gift to women. Winston is a former athlete who doesn't know what to do, but really needs to win whatever it is. Can this dysfunctional group handle the &"adorkable&" new girl?',
+                      puntuacion: 8.7,
+                      votos: 1,
+                      imagen: true,
+                      enlace_imagen: "http://cdn.opensly.com/series/9Y9C4N24RD.jpg",
+                      directores: "Jake Kasdan, Jesse Peretz, Peyton Reed, Jason Winer, Michael Spiller",
+                      titulo_original: "New Girl",
+                      generos: "Comedia")
+newgirl.save
+
 # ESQUEMA
 #homeland = Series.new(nombre: "",
 #                      informacion: "",
