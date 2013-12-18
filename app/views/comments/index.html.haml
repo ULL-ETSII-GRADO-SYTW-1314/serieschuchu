@@ -33,8 +33,10 @@
               %p
                 = form_for([@series, @series.comments.build]) do |f| 
                   = f.text_area :content, :placeholder => "Escribe un comentario..."
+                  = f.text_field :user, :type => "hidden", :value => current_user
+                  = f.text_field :state, :type => "hidden", :value => true
                   #enviar.actions.top-20
-                  = f.submit "Enviar"
+                    = f.submit "Enviar"
 
           .media Comentarios de #{@series.nombre}
           
@@ -46,6 +48,9 @@
                     = image_tag avatar_url(current_user)
                     .comment
                       <b>#{(User.find(current_user.id)).username}</b> comentó:
+                      - if (comment.user_id == current_user.id)
+                        .delete-comment
+                          %a(href="#") Eliminar
                       %br
                       = comment.content
                   .clear
