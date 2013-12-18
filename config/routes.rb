@@ -7,7 +7,7 @@ Serieschuchu::Application.routes.draw do
   resources :series
   resources :misseries
   resources :listadeusuarios
-  match "/search" => "series#search", :as => :search, :via => :get
+  match "/search" => "search#search", :as => :search, :via => :get
   get "inicio/portada"
   get "inicio/index"
   get "welcome/index"
