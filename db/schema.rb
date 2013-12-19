@@ -11,11 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131218182434) do
+ActiveRecord::Schema.define(version: 20131219012040) do
 
   create_table "comments", force: true do |t|
+    t.string   "commenter"
     t.text     "content"
-    t.boolean  "state"
     t.integer  "user_id"
     t.integer  "series_id"
     t.datetime "created_at"
@@ -23,7 +23,6 @@ ActiveRecord::Schema.define(version: 20131218182434) do
   end
 
   add_index "comments", ["series_id"], name: "index_comments_on_series_id"
-  add_index "comments", ["user_id"], name: "index_comments_on_user_id"
 
   create_table "episodes", force: true do |t|
     t.string   "nombre"

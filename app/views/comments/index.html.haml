@@ -28,22 +28,31 @@
       #episodios{:class=>"tab-pane fade in active"}
         .show-info
           .show-sinopsis
-            .media Agregar comentario
-            %p
-              = form_for([@series, @series.comments.build]) do |f| 
-                = f.text_area :content
-                #enviar.actions.top-20
-                = f.submit "Enviar"
+            .media
+              Agregar comentario
+              %p
+                = form_for([@series, @series.comments.build]) do |f| 
+                  = f.text_area :content, :placeholder => "Escribe un comentario..."
+                  = f.number_field :user_id, :value => current_user.id, :type => "hidden"
+                  = f.text_field :commenter, :value => current_user.username, :type => "hidden"
+                  #enviar.actions.top-20
+                    = f.submit "Enviar"
 
           .media Comentarios de #{@series.nombre}
           
           - if !@series.comments.count.zero?
-            .show-info-tabla
-              %table.tabla-comentarios.table
-                - @series.comments.each do |comment|
-                  - if comment.content
-                    %tr
-                      %td= (User.find(current_user.id)).username
-                      %td= comment.content
+            .show-comments
+              - @series.comments.reverse.each do |comment|
+                - if comment.content
+                  .usercomment
+                    = image_tag avatar_url(User.find(comment.user_id))
+                    .comment
+                      <b>#{comment.commenter}</b> comentó:
+                      - if (comment.user_id == current_user.id)
+                        .delete-comment
+                          = link_to 'Eliminar', [comment.series, comment], method: :delete, data: { confirm: '¿Estás seguro?' }
+                      %br
+                      = comment.content
+                  .clear
           - else
             %p Nadie ha comentado aún. Sé el primero en hacerlo!
