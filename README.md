@@ -43,6 +43,35 @@ Instrucciones para ejecutar en local
 
         $ http://localhost:3000/
 
+##Documento para el desarrollador
+Esta parte está enfocada a los aspectos que se han implementado en la aplicación por el momento, que es lo que falta y sus componentes principales.
+
+###Objetivos cumplidos
+La aplicación SeriesChuchu ha cumplido los siguientes objetivos:
+* Registro de usuarios (autenticación)
+* Base de datos y seguimiento de series
+* Subida de enlaces a series por parte del usuario
+* Publicar comentarios en las series
+* Relación entre usuarios (seguimiento)
+
+###Objetivos extra cumplidos
+* Implementar un buscador de series y buscador de usuarios
+
+###Cosas que faltan por pulir
+* Implementar más tests
+* Validaciones a la hora de agregar una nueva serie
+* Validaciones a la hora de agregar un nuevo episodio a una serie
+* Validaciones a la hora de agregar un nuevo comentario a una serie
+
+###Cosas que se deberían añadir
+* Modo de administración (Para que cualquier usuario no pueda acceder a todos los recursos)
+* Personalización del perfil del usuario (Para que ponga sus datos, gustos, etc)
+
+###Notas
+* Para el layout se ha empleado bootstrap
+* El registro y autenticación de usuarios se ha realizado mediante la gema devise
+* Como lenguaje de templates se emplea haml
+
 Changelog
 ---------
 * 10/11/2013: New serieschuchu, agregado soporte para haml
