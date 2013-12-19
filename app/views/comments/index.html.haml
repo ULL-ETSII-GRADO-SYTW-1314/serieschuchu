@@ -42,7 +42,7 @@
           
           - if !@series.comments.count.zero?
             .show-comments
-              - @series.comments.each do |comment|
+              - @series.comments.reverse.each do |comment|
                 - if comment.content
                   .usercomment
                     = image_tag avatar_url(User.find(comment.user_id))
@@ -50,7 +50,7 @@
                       <b>#{comment.commenter}</b> comentó:
                       - if (comment.user_id == current_user.id)
                         .delete-comment
-                          %a(href="#") Eliminar
+                          = link_to 'Eliminar', [comment.series, comment], method: :delete, data: { confirm: '¿Estás seguro?' }
                       %br
                       = comment.content
                   .clear
