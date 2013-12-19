@@ -116,7 +116,7 @@ modernfamily.save
 
 newgirl = Series.new(nombre: "New Girl",
                       informacion: "Serie iniciada en 2012, 30 min. por capítulo, EEUU",
-                      sinopsis: 'Jess - a bubbly offbeat teacher who is known to burst into spontaneous song - catches her boyfriend with another woman, and needs a new place to live. She moves into a loft with three single guys she's never met before. Nick is a jaded law-school dropout, who usually just wants to be left alone. Schmidt is an flashy businessman, who believes he is a gift to women. Winston is a former athlete who doesn't know what to do, but really needs to win whatever it is. Can this dysfunctional group handle the &"adorkable&" new girl?',
+                      sinopsis: "Jess - a bubbly offbeat teacher who is known to burst into spontaneous song - catches her boyfriend with another woman, and needs a new place to live. She moves into a loft with three single guys she's never met before. Nick is a jaded law-school dropout, who usually just wants to be left alone. Schmidt is an flashy businessman, who believes he is a gift to women. Winston is a former athlete who doesn't know what to do, but really needs to win whatever it is. Can this dysfunctional group handle the adorkable new girl?",
                       puntuacion: 8.7,
                       votos: 1,
                       imagen: true,
@@ -125,6 +125,90 @@ newgirl = Series.new(nombre: "New Girl",
                       titulo_original: "New Girl",
                       generos: "Comedia")
 newgirl.save
+
+sherlock = Series.new(nombre: "Sherlock",
+                      informacion: "Serie iniciada en 2010, 90 min. por capítulo, Reino Unido",
+                      sinopsis: 'Moderna actualización del mito de Sherlock Holmes, esta vez situándolo en el Londres del siglo XXI. Sus insuperables habilidades de deducción y su arrogante distanciamiento emocional le convierten en el perfecto detective, acompañado de su inseparable compañero John Watson y de todos los personajes clásicos de su mitología.',
+                      puntuacion: 9.2,
+                      votos: 1,
+                      imagen: true,
+                      enlace_imagen: "http://cdn.opensly.com/series/DA5HDZPFYU.jpg",
+                      directores: "Paul McGuigan",
+                      titulo_original: "Sherlock",
+                      generos: "Crimen, Drama, Misterio")
+sherlock.save
+
+cronicas = Series.new(nombre: "Crónicas vampíricas",
+                      informacion: "Serie iniciada en 2009, 43 min. por capítulo, EEUU",
+                      sinopsis: 'The Vampire Diaries (Crónicas vampíricas en España y El diario de los vampiros o Diarios de vampiros en México) es una serie de televisión de género dramático, creada por Kevin Williamson y basada en la saga de L. J. Smith. La trama gira en torno a la vida de Elena, sus amigos y otros habitantes de una pequeña ciudad de Virginia, llamada Mystic Falls. Elena Gilbert (Nina Dobrev), es una adolescente de la cual se enamoran dos hermanos vampiros, Stefan Salvatore (Paul Wesley), y su hermano Damon Salvatore (Ian Somerhalder), Elena es idéntica a la mujer que los convirtió en vampiros y de quien ambos estuvieron enamorados. The Vampire Diaries fue lanzado en el Canal The CW el 10 de septiembre de 2009 y el final de temporada salió al aire el 13 de mayo de 2010. El 9 septiembre de 2010 se estreno en Estados Unidos la segunda temporada.',
+                      puntuacion: 9,
+                      votos: 1,
+                      imagen: true,
+                      enlace_imagen: "http://cdn.opensly.com/series/PNWF9KUPAZ.jpg",
+                      directores: "Marcos Siega, John Behring, J. Miller Tobin, Joshua Butler, Chris Grismer, John Dahl, Wendey Stanzler, David Von Ancken, Rob Hardy, Liz Friedlander, Lance Anderson, Kevin Bray, Jeffrey G. Hunt, Pascal Verschooris",
+                      titulo_original: "The Vampire Diaries",
+                      generos: "Drama, Fantasía, Horror")
+cronicas.save
+
+trueblood = Series.new(nombre: "True Blood (Sangre fresca)",
+                      informacion: "Serie iniciada en 2008, 60 min. por capítulo, EEUU",
+                      sinopsis: 'En un pueblo del estado de Lousiana, una serie de brutales asesinatos hace peligrar la convivencia entre vampiros y seres humanos, que hasta entonces había sido pacífica gracias a una bebida japonesa hecha de sangre sintética. Sin embargo, algunos vampiros estaban descontentos porque preferían seguir alimentándose de sangre humana; pero también había hombres que no estaban satisfechos con esta situación. En estas circunstancias nace el polémico romance entre Bill Compton (Stephen Moyer, "Quills"), el primer vampiro que llega al pueblo, y Sookie Stackhouse (Anna Paquin), una camarera clarividente. Nueva serie de la HBO realizada por Alan Ball ("A dos metros bajo tierra"). Basada en la serie de novelas "Southern vampire", de la escritora norteamericana Charlaine Harris.',
+                      puntuacion: 8.4,
+                      votos: 1,
+                      imagen: true,
+                      enlace_imagen: "http://cdn.opensly.com/series/W5AEY6EYVE.jpg",
+                      directores: "Michael Lehmann, Scott Winant, Daniel Minahan, John Dahl, Michael Ruscio, Lesli Linka Glatter, David Petrarca, Anthony Hemingway, Alan Ball, Romeo Tirone, Daniel Attias",
+                      titulo_original: "True Blood",
+                      generos: "Drama, Fantasía, Misterio")
+trueblood.save
+
+eraseunavez = Series.new(nombre: "Érase una vez",
+                      informacion: "Serie iniciada en 2011, 60 min. por capítulo, EEUU",
+                      sinopsis: 'En una tierra de magia, princesas, hadas y Brujas, una reina malvada coloca un hechizo que congela el tiempo y transportes todos los habitantes del mundo de cuento de hadas en Storybrooke, una ciudad en los E.e.u.u. de hoy en día. No pueden recordar nada de sus vidas pasadas y la reina malvada, ahora conocida como Regina está ejecutando la ciudad y sus habitantes como el alcalde. La única persona que conoce que la verdad es de Regina adoptado a hijo Henry debido a su libro de cuentos de hadas. Con el fin de hacer las cosas derecho Henry logra localizar a su madre Emma que vive en Boston y convence a su estancia con él en Storybrooke. Para Emma es en realidad la hija de Blanca Nieves y el príncipe azul y es el único que puede romper el hechizo. Ahora como las historias de cuento de hadas comienzan a desplegar en el mundo real y Emma lentamente comienza a creer afirmaciones de Henry, las tensiones entre Regina y Emma aumentan. Esta rivalidad se convierte y Emma se vuelve decidida a dejar de Regina así como para construir en su incipiente relación con su madre (quien ahora es profesor de la escuela de corazón bueno de Henry) y el hijo que abandona hace diez años.',
+                      puntuacion: 8.6,
+                      votos: 1,
+                      imagen: true,
+                      enlace_imagen: "http://cdn.opensly.com/series/S64PUWEZVD.jpg",
+                      directores: "Dean White, Ralph Hemecker, David Solomon, Milan Cheylov, Paul A. Edwards, David Barrett, Ron Underwood",
+                      titulo_original: "Once Upon a Time",
+                      generos: "Aventura, Drama, Fantasía")
+eraseunavez.save
+
+suits = Series.new(nombre: "Suits",
+                      informacion: "Serie iniciada en 2011, 60 min. por capítulo, EEUU",
+                      sinopsis: 'Mike Ross siempre ha soñado con convertirse en un abogado, pero la vida lo ha llevado a una dirección diferente. Sin embargo, cuando una inesperada oportunidad se le presenta, pronto se convierte en el nuevo asociado de uno de los principales bufetes de abogados en Manhattan. Sólo hay un pequeño problema: en realidad no es graduado de la licenciatura de derecho.',
+                      puntuacion: 9.1,
+                      votos: 1,
+                      imagen: true,
+                      enlace_imagen: "http://cdn.opensly.com/series/STZE4DYD7Z.jpg",
+                      directores: "Kevin Bray",
+                      titulo_original: "Suits",
+                      generos: "Comedia, Drama")
+suits.save
+
+sobrenatural = Series.new(nombre: "Sobrenatural",
+                      informacion: "Serie iniciada en 2005, 60 min. por capítulo, EEUU",
+                      sinopsis: 'Un misterioso mensaje telefónico de su padre, que hace mucho tiempo que ha abandonado el hogar familiar, lleva a los hermanos Dean y Sam Winchester hasta California. Aunque no encuentran a su padre, descubren su diario, en el que intentan encontrar pistas que les ayuden a destruir al espíritu maligno que, según su progenitor, es el responsable de la muerte en extrañas circunstancias de la madre de los hermanos.',
+                      puntuacion: 9.1,
+                      votos: 1,
+                      imagen: true,
+                      enlace_imagen: "http://cdn.opensly.com/series/U2KXWPSHHF.jpg",
+                      directores: "Philip Sgriccia, Robert Singer, Kim Manners, Charles Beeson, Mike Rohl, John F. Showalter, Guy Norman Bee, Steve Boyum, J. Miller Tobin, James L. Conway, Jensen Ackles, Jeannot Szwarc, Tim Andrew, Thomas J. Wright, Peter Ellis, David Nutter, Eric Kripke, Ben Edlund",
+                      titulo_original: "Supernatural",
+                      generos: "Drama, Fantasía, Horror")
+sobrenatural.save
+
+fringe = Series.new(nombre: "Fringe",
+                      informacion: "Serie iniciada en 2008, 60 min. por capítulo, EEUU, Canadá",
+                      sinopsis: 'Serie de ciencia ficción sigue a la agente del FBI Olivia Dunham, encargada de esclarecer fenómenos inexplicables. En sus investigaciones para encontrar el hilo conductor de estos acontecimientos y la mano que los mueve, Olivia y su jefe -el agente Broyles- contarán con la ayuda del doctor Bishop -un científico loco y desmemoriado que sabe más de lo que parece- y de su hijo Peter... Nueva serie del creador de "Perdidos" (J.J. Abrams). Su episodio piloto, dirigido por Alex Graves, recibió muy buena acogida por parte de la crítica. Al igual que el piloto de Perdidos, éste costó unos 10 millones de dólares.',
+                      puntuacion: 9,
+                      votos: 1,
+                      imagen: true,
+                      enlace_imagen: "http://cdn.opensly.com/series/2EF4F6T6CZ.jpg",
+                      directores: "Joe Chappelle, Brad Anderson, Fred Toye, Jeannot Szwarc, Charles Beeson, Akiva Goldsman, Paul A. Edwards, Dennis Smith, Jeffrey G. Hunt, David Straiton, Tom Yatsko, Paul Holahan, Miguel Sapochnik",
+                      titulo_original: "Fringe",
+                      generos: "Drama, Horror, Misterio")
+fringe.save
 
 # ESQUEMA
 #homeland = Series.new(nombre: "",
