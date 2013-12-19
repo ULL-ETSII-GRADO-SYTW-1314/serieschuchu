@@ -11,5 +11,9 @@ class CommentsController < ApplicationController
   end
 
   def destroy
+    @series = Series.find(params[:series_id])
+    @comment = @series.comments.find(params[:id])
+    @comment.destroy
+    redirect_to "#{series_path(@series)}/comments"
   end
 end
