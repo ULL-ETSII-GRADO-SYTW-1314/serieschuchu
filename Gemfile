@@ -21,7 +21,7 @@ end
 
 # Gemas para Heroku
 group :production do
-  gem 'pg', '0.15.1'
+  gem 'pg', '*'
   gem 'rails_12factor', '*'
 end
 
@@ -50,7 +50,7 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
+# gem 'bcrypt-ruby', '*'
 
 # Use unicorn as the app server
 # gem 'unicorn'
