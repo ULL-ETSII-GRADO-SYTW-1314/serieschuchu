@@ -3,7 +3,7 @@ ruby '2.0.0'
 #ruby-gemset=serieschuchu
 
 # Gema de Rails
-gem 'rails', '4.0.1'
+gem 'rails', '*'
 
 #AQUI LAS NUEVAS GEMAS
 gem 'haml-rails'
