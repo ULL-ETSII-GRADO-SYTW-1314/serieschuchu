@@ -5,7 +5,7 @@ Permite combinar el visionado de series además de interactuar con otros usuario
 
 **Miembros:**
 * David Hernández Bethencourt
-* Miguel Adán Negrón Almenara
+* Miguel Negrón
 * Waldo Nazco Torres
 * Jonathan Hernández Phungchinda
 
